@@ -210,3 +210,30 @@ a:hover {
     /* Warna teks jadi lebih gelap */
     text-decoration: none;
 }
+
+/* --- SOCIAL ICONS (Style: Outline) --- */
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    /* SEBELUMNYA 18px, kita perlebar jadi 30px */
+    align-items: center;
+}
+
+/* Bagian bawah ini tetap sama, tidak perlu diubah */
+.social-links a {
+    color: #999;
+    display: flex;
+    transition: all 0.2s ease;
+}
+
+.social-links svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+}
+
+.social-links a:hover {
+    color: #1a8917;
+    transform: scale(1.1);
+}
