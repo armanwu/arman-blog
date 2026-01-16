@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="intro">
+    <h1>Arman Wu's Blog</h1>
+    <p>Architecture // Computer Science // Design Cognition</p>
+</section>
+
+<div class="post-feed">
+    {{ range .Site.RegularPages }}
+    <article class="post-preview">
+        <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+
+        <p class="summary">{{ .Summary | truncate 160 }}</p>
+
+        <a href="{{ .Permalink }}" class="read-more">Read More →</a>
+    </article>
+    {{ end }}
+</div>
+{{ end }}

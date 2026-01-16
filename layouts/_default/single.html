@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="full-article">
+    <header class="article-header">
+        <h1>{{ .Title }}</h1>
+        <div class="article-meta">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span> •
+            <span>{{ .ReadingTime }} min read</span>
+        </div>
+    </header>
+
+    <div class="article-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
