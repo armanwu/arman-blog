@@ -39,16 +39,23 @@ a:hover {
 
 /* --- 3. NAVIGASI ATAS --- */
 .nav-bar {
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: #fff;
+    /* Memberi jarak vertikal agar tidak gepeng */
+    padding: 25px 0;
+    margin-bottom: 50px;
+}
+
+/* Ini kelas baru untuk merapikan logo & menu di dalam kotak */
+.nav-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-    margin-bottom: 60px;
-    border-bottom: 1px solid #f2f2f2;
 }
 
 .logo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -0.5px;
     color: #000;
@@ -164,4 +171,42 @@ a:hover {
     text-align: center;
     color: #999;
     font-size: 0.9rem;
+}
+
+/* Gaya untuk Menu Item */
+.menu-item {
+    margin-left: 25px;
+    /* Jarak antar menu */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #757575;
+    /* Abu-abu elegan */
+    position: relative;
+}
+
+/* Efek saat mouse melayang (Hover) */
+.menu-item:hover {
+    color: #000;
+    /* Jadi hitam saat disentuh */
+}
+
+/* KHUSUS LINK DI DALAM ARTIKEL / KONTEN */
+.article-content a {
+    color: #1a8917;
+    /* Hijau khas Medium */
+    text-decoration: underline;
+    /* Garis bawah agar jelas ini link */
+    text-decoration-thickness: 1px;
+    /* Garis bawah tipis elegan */
+    text-underline-offset: 2px;
+    /* Jarak garis dengan teks */
+}
+
+/* Efek saat mouse melayang di link artikel */
+.article-content a:hover {
+    background-color: #daf5db;
+    /* Highlight hijau muda lembut */
+    color: #0d460c;
+    /* Warna teks jadi lebih gelap */
+    text-decoration: none;
 }

@@ -10,9 +10,15 @@
 
 <body>
 
-    <nav class="container nav-bar">
-        <a href="/" class="logo">Home</a>
-        <div class="menu">
+    <nav class="nav-bar">
+        <div class="container nav-flex">
+            <a href="/" class="logo">Arman Wu</a>
+
+            <div class="menu">
+                {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" class="menu-item">{{ .Name }}</a>
+                {{ end }}
+            </div>
         </div>
     </nav>
 
@@ -20,8 +26,10 @@
         {{ block "main" . }}{{ end }}
     </main>
 
-    <footer class="container footer">
-        <p>&copy; {{ now.Year }} Arman Wu. <br>Powered by Hugo.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; {{ now.Year }} Arman Arisman</p>
+        </div>
     </footer>
 
 </body>
