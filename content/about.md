@@ -1,6 +1,5 @@
 +++
 title = 'About Me'
-date = 2026-01-16T15:00:00+07:00
 draft = false
 layout = 'single-no-meta'
 +++
