@@ -22,5 +22,26 @@
       <guid>http://localhost:1313/posts/uji-coba/</guid>
       <description>&lt;p&gt;&amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&amp;rdquo;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Publications</title>
+      <link>http://localhost:1313/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publications/</guid>
+      <description>&lt;h2 id=&#34;books&#34;&gt;Books&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Model, Sistem, dan Ruang yang Belum Terhubung: Kajian Reflektif Terbuka terhadap SOP Implementasi BIM 2024 Kementerian PU dari Perspektif Arsitek Perencana&#xA;&lt;a href=&#34;https://github.com/armanwu/kajian-sop-bim&#34;&gt;(link)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;journal-articles&#34;&gt;Journal Articles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Creativity in Generative Design: The impact of architects’ control over geometric parameters in early-stage form-finding using genetic algorithms&#xA;&lt;a href=&#34;https://journals.sagepub.com/doi/abs/10.1177/14780771251340203&#34;&gt;(link)&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The application of the Delphi method in architectural research&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;(link)&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Hubungan antara Penggunaan Software Pemodelan Arsitektur dengan Kompleksitas Bangunan&#xA;&lt;!-- raw HTML omitted --&gt;&#xA;(link)&#xA;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Talks</title>
+      <link>http://localhost:1313/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/talks/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;2025&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;D5 Render: Efficient Visualization Workflow with D5 Render - October 1, 2025&lt;/li&gt;&#xA;&lt;li&gt;ISBI: Keterbatasan dan Potensi AI dalam Dunia Seni dan Desain - September 24, 2025&lt;/li&gt;&#xA;&lt;li&gt;ATRIA ITB: Code &amp;amp; Concept: Designing for Uncertainty on Unstable Ground - September 14, 2025&lt;/li&gt;&#xA;&lt;li&gt;Kementerian PU: Strategi Implementasi BIM di Tahap Perencanaan: Pendekatan Realistis dari KOndisi Lapangan ke Usulan Perbaikan Regulasi - August 11, 2025&lt;/li&gt;&#xA;&lt;li&gt;Weekend BIM Talk: Assembling the Planning and Design Puzzle: BIM, CAD, and Collaborative Intelligence - May 9, 2025&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;2024&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Work</title>
+      <link>http://localhost:1313/work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work/</guid>
+      <description>&lt;p&gt;This section is under construction. Selected projects will be added soon.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
