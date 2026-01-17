@@ -1,6 +1,11 @@
 {{ define "main" }}
 <section class="intro">
-    <h1>{{ .Site.Title }}</h1>
+
+    <div class="profile-container">
+        <img src="images/avatar.png" alt="Arman Wu" class="profile-pic">
+    </div>
+
+    <h1>Arman Wu's Blog</h1>
     <p>Architecture // Computer Science // Design Cognition</p>
 
 
@@ -62,18 +67,66 @@
 
     </div>
 
+    <div style="max-width: 600px; margin-top: 25px; color: #555; line-height: 1.6;">
+        <p>
+            I navigate the complex intersection of <strong>architectural form</strong>, <strong>digital
+                systems</strong>, and <strong>design cognition</strong>.
+            Bridging the gap between abstract computation and practical intuition, I explore how code serves as a
+            language for architectural expression—integrating <strong>professional BIM workflows</strong> with
+            <strong>computational and open-source tools</strong>.
+        </p>
+    </div>
+
 </section>
 
-<div class="post-feed">
-    {{ range where .Site.RegularPages "Section" "posts" }}
-    <article class="post-preview">
-        <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }}</span>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+</section>
 
-        <p class="summary">{{ .Summary | truncate 160 }}</p>
+<section class="home-section">
+    <h2 style="font-size: 1.2rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Selected Projects</h2>
 
-        <a href="{{ .Permalink }}" class="read-more">Read More →</a>
-    </article>
-    {{ end }}
-</div>
+    <div class="project-grid" style="margin-top: 0;">
+        {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+        <a href="{{ .Permalink }}" class="project-card">
+            <div class="project-image">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" alt="{{ .Title }}">
+                {{ else }}
+                <div style="background: #ddd; width: 100%; height: 100%;"></div>
+                {{ end }}
+            </div>
+            <div class="project-info">
+                <h3>{{ .Title }}</h3>
+            </div>
+        </a>
+        {{ end }}
+    </div>
+
+    <div style="margin-top: 15px; text-align: right;">
+        <a href="/projects" style="font-size: 0.9rem; color: #1a8917; text-decoration: none;">View All Projects →</a>
+    </div>
+</section>
+
+<hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+<section class="home-section">
+    <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 20px;">Latest Essays</h2>
+
+    <div class="posts">
+        {{ range where .Site.RegularPages "Section" "posts" }}
+        <article class="post-preview">
+            <a href="{{ .Permalink }}" class="post-link">
+                <h2 class="post-title">{{ .Title }}</h2>
+                <div class="post-meta">
+                    <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+                    <span>• {{ .ReadingTime }} min read</span>
+                </div>
+                <div class="post-summary">
+                    {{ .Summary | truncate 150 }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+</section>
+
 {{ end }}

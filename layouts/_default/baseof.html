@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,17 +10,7 @@
 
 <body>
 
-    <nav class="nav-bar">
-        <div class="container nav-flex">
-            <a href="/" class="logo">Arman Wu</a>
-
-            <div class="menu">
-                {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" class="menu-item">{{ .Name }}</a>
-                {{ end }}
-            </div>
-        </div>
-    </nav>
+    {{ partial "nav.html" . }}
 
     <main class="container">
         {{ block "main" . }}{{ end }}

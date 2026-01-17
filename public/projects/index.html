@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
@@ -10,38 +10,100 @@
 
 <body>
 
-    <nav class="nav-bar">
-        <div class="container nav-flex">
-            <a href="/" class="logo">Arman Wu</a>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">Arman Wu</a>
 
-            <div class="menu">
-                
-                <a href="/posts/" class="menu-item">Essays</a>
-                
-                <a href="/projects/" class="menu-item">Projects</a>
-                
-                <a href="/publications/" class="menu-item">Publications</a>
-                
-                <a href="/talks/" class="menu-item">Talks</a>
-                
-                <a href="/about/" class="menu-item">About</a>
-                
-            </div>
-        </div>
-    </nav>
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
 
     <main class="container">
         
-<article class="full-article">
-    <header class="article-header">
-        <h1>Projects</h1>
-    </header>
-
-    <div class="article-content">
-        <p>This section is under construction. Selected projects will be added soon.</p>
+<section class="intro">
+    <h1>Projects</h1>
+    <div class="content" style="margin-bottom: 20px; color: #757575;">
+        <p>Here is a selection of my computational design works and architectural experiments.</p>
 
     </div>
-</article>
+</section>
+
+<div class="project-grid">
+    
+    <a href="http://localhost:1313/projects/project01/" class="project-card">
+
+        <div class="project-image">
+            
+            <img src="/images/tower-thumb.png" alt="Parametric Tower 01">
+            
+        </div>
+
+        <div class="project-info">
+            <h3>Parametric Tower 01</h3>
+        </div>
+    </a>
+    
+    <a href="http://localhost:1313/projects/project02-copy/" class="project-card">
+
+        <div class="project-image">
+            
+            <img src="/images/thumb.png" alt="Parametric Tower 02">
+            
+        </div>
+
+        <div class="project-info">
+            <h3>Parametric Tower 02</h3>
+        </div>
+    </a>
+    
+    <a href="http://localhost:1313/projects/project02/" class="project-card">
+
+        <div class="project-image">
+            
+            <img src="/images/thumb.png" alt="Parametric Tower 02">
+            
+        </div>
+
+        <div class="project-info">
+            <h3>Parametric Tower 02</h3>
+        </div>
+    </a>
+    
+</div>
 
     </main>
 

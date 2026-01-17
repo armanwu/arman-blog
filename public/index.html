@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
-	<meta name="generator" content="Hugo 0.148.2"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arman Wu</title>
@@ -11,30 +11,57 @@
 
 <body>
 
-    <nav class="nav-bar">
-        <div class="container nav-flex">
-            <a href="/" class="logo">Arman Wu</a>
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">Arman Wu</a>
 
-            <div class="menu">
-                
-                <a href="/posts/" class="menu-item">Essays</a>
-                
-                <a href="/projects/" class="menu-item">Projects</a>
-                
-                <a href="/publications/" class="menu-item">Publications</a>
-                
-                <a href="/talks/" class="menu-item">Talks</a>
-                
-                <a href="/about/" class="menu-item">About</a>
-                
-            </div>
-        </div>
-    </nav>
+        <button class="hamburger" id="hamburger-btn" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+            
+            <li class="nav-item">
+                <a href="/posts" class="nav-link">Essays</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/projects" class="nav-link">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/publications" class="nav-link">Publications</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="/about" class="nav-link">About</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+</script>
 
     <main class="container">
         
 <section class="intro">
-    <h1>Arman Wu</h1>
+
+    <div class="profile-container">
+        <img src="images/avatar.png" alt="Arman Wu" class="profile-pic">
+    </div>
+
+    <h1>Arman Wu's Blog</h1>
     <p>Architecture // Computer Science // Design Cognition</p>
 
 
@@ -96,20 +123,114 @@
 
     </div>
 
+    <div style="max-width: 600px; margin-top: 25px; color: #555; line-height: 1.6;">
+        <p>
+            I navigate the complex intersection of <strong>architectural form</strong>, <strong>digital
+                systems</strong>, and <strong>design cognition</strong>.
+            Bridging the gap between abstract computation and practical intuition, I explore how code serves as a
+            language for architectural expression—integrating <strong>professional BIM workflows</strong> with
+            <strong>computational and open-source tools</strong>.
+        </p>
+    </div>
+
 </section>
 
-<div class="post-feed">
-    
-    <article class="post-preview">
-        <span class="meta-date">Jan 16, 2026</span>
-        <h2><a href="http://localhost:1313/posts/uji-coba/">Uji Coba</a></h2>
+</section>
 
-        <p class="summary"><p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis …</p></p>
+<section class="home-section">
+    <h2 style="font-size: 1.2rem; font-weight: 700; margin-top: 40px; margin-bottom: 20px;">Selected Projects</h2>
 
-        <a href="http://localhost:1313/posts/uji-coba/" class="read-more">Read More →</a>
-    </article>
-    
-</div>
+    <div class="project-grid" style="margin-top: 0;">
+        
+        <a href="http://localhost:1313/projects/project01/" class="project-card">
+            <div class="project-image">
+                
+                <img src="/images/tower-thumb.png" alt="Parametric Tower 01">
+                
+            </div>
+            <div class="project-info">
+                <h3>Parametric Tower 01</h3>
+            </div>
+        </a>
+        
+        <a href="http://localhost:1313/projects/project02-copy/" class="project-card">
+            <div class="project-image">
+                
+                <img src="/images/thumb.png" alt="Parametric Tower 02">
+                
+            </div>
+            <div class="project-info">
+                <h3>Parametric Tower 02</h3>
+            </div>
+        </a>
+        
+        <a href="http://localhost:1313/projects/project02/" class="project-card">
+            <div class="project-image">
+                
+                <img src="/images/thumb.png" alt="Parametric Tower 02">
+                
+            </div>
+            <div class="project-info">
+                <h3>Parametric Tower 02</h3>
+            </div>
+        </a>
+        
+    </div>
+
+    <div style="margin-top: 15px; text-align: right;">
+        <a href="/projects" style="font-size: 0.9rem; color: #1a8917; text-decoration: none;">View All Projects →</a>
+    </div>
+</section>
+
+<hr style="margin: 40px 0; border: 0; border-top: 1px solid #eee;">
+
+<section class="home-section">
+    <h2 style="font-size: 1.2rem; font-weight: 700; margin-bottom: 20px;">Latest Essays</h2>
+
+    <div class="posts">
+        
+        <article class="post-preview">
+            <a href="http://localhost:1313/posts/uji-coba-copy-2/" class="post-link">
+                <h2 class="post-title">Uji Coba</h2>
+                <div class="post-meta">
+                    <span>Jan 16, 2026</span>
+                    <span>• 1 min read</span>
+                </div>
+                <div class="post-summary">
+                    <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim …</p>
+                </div>
+            </a>
+        </article>
+        
+        <article class="post-preview">
+            <a href="http://localhost:1313/posts/uji-coba-copy/" class="post-link">
+                <h2 class="post-title">Uji Coba</h2>
+                <div class="post-meta">
+                    <span>Jan 16, 2026</span>
+                    <span>• 1 min read</span>
+                </div>
+                <div class="post-summary">
+                    <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim …</p>
+                </div>
+            </a>
+        </article>
+        
+        <article class="post-preview">
+            <a href="http://localhost:1313/posts/uji-coba/" class="post-link">
+                <h2 class="post-title">Uji Coba</h2>
+                <div class="post-meta">
+                    <span>Jan 16, 2026</span>
+                    <span>• 1 min read</span>
+                </div>
+                <div class="post-summary">
+                    <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim …</p>
+                </div>
+            </a>
+        </article>
+        
+    </div>
+</section>
+
 
     </main>
 

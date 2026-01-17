@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Arman Wu</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Arman Wu</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parametric Tower 01</title>
+      <link>http://localhost:1313/projects/project01/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project01/</guid>
+      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parametric Tower 02</title>
+      <link>http://localhost:1313/projects/project02-copy/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project02-copy/</guid>
+      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parametric Tower 02</title>
+      <link>http://localhost:1313/projects/project02/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project02/</guid>
+      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -18,12 +18,7 @@ title = 'Arman Wu'
     pageRef = "/publications"
     weight = 30
 
-  [[menus.main]]
-    name = "Talks"
-    pageRef = "/talks"
-    weight = 40
-
-  [[menus.main]]
+   [[menus.main]]
     name = "About"
     pageRef = "/about"
-    weight = 50
+    weight = 40
