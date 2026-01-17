@@ -97,11 +97,34 @@ p {
     align-items: center;
 }
 
+/* --- LOGO & HOME DI NAVIGASI --- */
 .nav-logo {
+    display: flex;
+    /* KUNCI: Agar gambar & teks sebelahan */
+    align-items: center;
+    /* Agar rata tengah vertikal */
+    gap: 10px;
+    /* Jarak antara logo dan tulisan Home */
+
+    /* Styling Teks Home */
     font-weight: 700;
     font-size: 1.3rem;
     text-decoration: none;
     color: #1D252C;
+    /* Warna teks (sesuai tema City Lights) */
+}
+
+/* Pengaturan Ukuran Logo */
+.nav-logo img {
+    height: 32px;
+    /* Tinggi logo disesuaikan agar pas di menu */
+    width: auto;
+    /* Lebar mengikuti rasio gambar */
+    display: block;
+
+    /* Opsional: Jika ingin logonya bulat, aktifkan baris bawah ini */
+    border-radius: 50%;
+    */
 }
 
 /* Menu Desktop */
