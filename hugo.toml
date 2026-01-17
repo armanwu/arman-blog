@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'Arman Wu'
+title = 'Home'
 
 [menus]
   [[menus.main]]
