@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home</title>
+    <title>Arman Wu</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Home</description>
+    <description>Recent content on Arman Wu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
@@ -51,7 +51,7 @@
       <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/steve-driscoll-VsBl5PwVZpY-unsplash.jpg&#34; alt=&#34;Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Gereja dan Teknologi Digital: Membangun Jembatan antara Tradisi dan Inovasi</title>
+      <title>The Church and Digital Technology: Building Bridges Between Tradition and Innovation</title>
       <link>http://localhost:1313/posts/church-technology/</link>
       <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
       <guid>http://localhost:1313/posts/church-technology/</guid>

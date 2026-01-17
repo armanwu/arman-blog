@@ -4,8 +4,12 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computational Thinking in Architectural Design Process | Home</title>
+    <title>Computational Thinking in Architectural Design Process | Arman Wu</title>
+
     <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
 </head>
 
 <body>
@@ -15,7 +19,7 @@
         <a href="/" class="nav-logo">
             <img src="/img/logo.png" alt="Logo">
 
-            <span>Home</span>
+            <span></span>
         </a>
 
         <button class="hamburger" id="hamburger-btn" aria-label="Menu">
@@ -108,6 +112,18 @@ a set of procedures to solve problems.</p>
             <p>&copy; 2026 Arman Arisman</p>
         </div>
     </footer>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger) {
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+        }
+    </script>
 
 </body>
 

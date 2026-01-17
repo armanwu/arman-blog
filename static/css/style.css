@@ -1,12 +1,16 @@
-/* =========================================
-   CITY LIGHTS PALETTE (Light Adaptation)
-   -----------------------------------------
-   Deep Gunmetal (Text): #1D252C
-   Vibrant Blue (Links): #2979ff
-   Teal Accent (Hover):  #00bfa5
-   ========================================= */
+/* ==========================================================================
+   THEME: CITY LIGHTS (Light Adaptation)
+   --------------------------------------------------------------------------
+   Colors:
+   - Text (Deep Gunmetal): #1D252C
+   - Links (Vibrant Blue): #2979ff
+   - Hover (Teal Accent):  #00bfa5
+   - Borders/Lines:        #f0f4f8 / #dce3e8
+   ========================================================================== */
 
-/* 1. GLOBAL RESET & TYPOGRAPHY */
+/* =========================================
+   1. GLOBAL RESET & TYPOGRAPHY
+   ========================================= */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +24,6 @@ html {
 body {
     background-color: #fff;
     color: #1D252C;
-    /* Deep Gunmetal */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
 }
@@ -33,10 +36,17 @@ a {
 
 a:hover {
     color: #2979ff;
-    /* Vibrant Blue */
 }
 
-/* Tipografi Judul */
+/* --- Headings --- */
+h1,
+h2,
+h3,
+p {
+    text-align: left;
+    /* Default Rata Kiri */
+}
+
 h1 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -44,8 +54,6 @@ h1 {
     letter-spacing: -0.5px;
     line-height: 1.2;
     color: #0d1117;
-    text-align: left;
-    /* PASTI RATA KIRI */
 }
 
 h2 {
@@ -54,30 +62,30 @@ h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #1D252C;
-    text-align: left;
 }
 
 h3 {
     font-size: 1.2rem;
     font-weight: 600;
     color: #1D252C;
-    text-align: left;
 }
 
 p {
     margin-bottom: 1.5rem;
-    text-align: left;
-    /* PASTI RATA KIRI */
 }
 
-/* 2. LAYOUT & CONTAINER */
+/* =========================================
+   2. MAIN LAYOUT
+   ========================================= */
 .container {
     max-width: 720px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-/* 3. RESPONSIVE NAVIGATION */
+/* =========================================
+   3. NAVIGATION BAR
+   ========================================= */
 .navbar {
     background: #fff;
     border-bottom: 1px solid #f0f4f8;
@@ -97,37 +105,25 @@ p {
     align-items: center;
 }
 
-/* --- LOGO & HOME DI NAVIGASI --- */
+/* Logo & Brand */
 .nav-logo {
     display: flex;
-    /* KUNCI: Agar gambar & teks sebelahan */
     align-items: center;
-    /* Agar rata tengah vertikal */
     gap: 10px;
-    /* Jarak antara logo dan tulisan Home */
-
-    /* Styling Teks Home */
     font-weight: 700;
     font-size: 1.3rem;
     text-decoration: none;
     color: #1D252C;
-    /* Warna teks (sesuai tema City Lights) */
 }
 
-/* Pengaturan Ukuran Logo */
 .nav-logo img {
     height: 32px;
-    /* Tinggi logo disesuaikan agar pas di menu */
     width: auto;
-    /* Lebar mengikuti rasio gambar */
     display: block;
-
-    /* Opsional: Jika ingin logonya bulat, aktifkan baris bawah ini */
     border-radius: 50%;
-    */
 }
 
-/* Menu Desktop */
+/* Desktop Menu */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -146,7 +142,7 @@ p {
     color: #2979ff;
 }
 
-/* Hamburger */
+/* Hamburger Icon (Mobile) */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -163,62 +159,48 @@ p {
     background-color: #1D252C;
 }
 
-/* 4. HALAMAN DEPAN (HOME) - FULL RATA KIRI */
+/* =========================================
+   4. HOMEPAGE (INTRO)
+   ========================================= */
 .intro {
     margin-bottom: 60px;
     text-align: left;
-    /* KUNCI UTAMA: Wadah intro rata kiri */
 }
 
-/* --- Style Avatar Bulat --- */
+/* Avatar/Logo Style */
 .profile-container {
     margin-bottom: 25px;
     display: flex;
-    /* Pakai flex agar mudah diatur */
     justify-content: flex-start;
-    /* Pastikan gambar di KIRI */
 }
 
 .profile-pic {
     width: 100px;
-    /* Saya kecilkan sedikit biar proporsional di kiri */
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-
     border: 3px solid #e1e8ed;
     box-shadow: 0 5px 15px rgba(29, 37, 44, 0.15);
-
     transition: transform 0.3s ease, border-color 0.3s;
 }
 
-.profile-pic:hover {
-    transform: scale(1.05);
-    border-color: #2979ff;
-}
-
-/* -------------------------- */
-
+/* Intro Text */
 .intro p {
     color: #5b6c7f;
     font-size: 1.1rem;
     line-height: 1.6;
     text-align: left;
-    /* Intro text rata kiri */
     max-width: 100%;
-    /* Lebar penuh */
     margin: 0 0 1.5rem 0;
-    /* Reset margin aneh-aneh */
 }
 
-/* Social Icons - RATA KIRI */
+/* Social Icons */
 .social-links {
     margin-top: 25px;
     display: flex;
     gap: 25px;
     align-items: center;
     justify-content: flex-start;
-    /* Ikon mulai dari KIRI */
 }
 
 .social-links a {
@@ -238,7 +220,9 @@ p {
     transform: scale(1.1);
 }
 
-/* Post List */
+/* =========================================
+   5. POST LIST / ESSAYS (LIST VIEW)
+   ========================================= */
 .post-preview {
     margin-bottom: 50px;
 }
@@ -249,7 +233,6 @@ p {
     font-weight: 700;
     line-height: 1.25;
     color: #1D252C;
-    text-align: left;
 }
 
 .post-meta {
@@ -259,17 +242,30 @@ p {
     letter-spacing: 1px;
     margin-bottom: 8px;
     font-weight: 600;
-    text-align: left;
 }
 
 .post-summary {
     font-family: Georgia, serif;
     color: #4a5868;
     font-size: 1rem;
-    text-align: left;
 }
 
-/* 5. HALAMAN BACA (SINGLE ARTICLE) */
+/* FIX: Thumbnail Image in Post List */
+.post-preview img {
+    width: 100%;
+    max-width: 640px;
+    /* Membatasi lebar agar tidak terlalu besar */
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 15px 0;
+    border: 1px solid #dce3e8;
+    display: block;
+}
+
+/* =========================================
+   6. SINGLE ARTICLE (READING VIEW)
+   ========================================= */
 .article-header {
     margin-bottom: 40px;
     text-align: left;
@@ -287,7 +283,6 @@ p {
     font-size: 1.15rem;
     line-height: 1.7;
     text-align: left;
-    /* Rata Kiri */
     color: #1D252C;
 }
 
@@ -300,7 +295,7 @@ p {
     font-family: -apple-system, sans-serif;
     color: #1D252C;
     border-bottom: 2px solid #2979ff;
-    padding-bottom: 10px;
+    padding-bottom: 3px;
     display: inline-block;
 }
 
@@ -335,7 +330,24 @@ p {
     text-decoration: none;
 }
 
-/* 6. PROJECT GRID */
+/* FIX: List Indentation (Bullet Points) */
+.article-content ul,
+.article-content ol {
+    margin-left: 18px;
+    /* Indentasi agar rapi */
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+.article-content li {
+    margin-bottom: 0.5rem;
+    padding-left: 5px;
+    list-style-position: outside;
+}
+
+/* =========================================
+   7. PROJECT GRID
+   ========================================= */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -385,19 +397,23 @@ p {
     display: none;
 }
 
-/* 7. FOOTER */
+/* =========================================
+   8. FOOTER
+   ========================================= */
 .footer {
     margin-top: 80px;
     padding: 40px 0;
     border-top: 1px solid #f0f4f8;
     text-align: center;
-    /* Footer biasanya tetap center biar manis, tapi kalau mau kiri ubah jadi left */
     color: #5b6c7f;
     font-size: 0.9rem;
 }
 
-/* 8. MEDIA QUERIES */
+/* =========================================
+   9. MEDIA QUERIES (RESPONSIVE)
+   ========================================= */
 
+/* Tablet & Mobile Menu (< 768px) */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -439,6 +455,7 @@ p {
     }
 }
 
+/* Small Screens / Mobile Typography (< 600px) */
 @media (max-width: 600px) {
     html {
         font-size: 15px;
@@ -478,34 +495,3 @@ p {
         font-size: 0.85rem;
     }
 }
-
-/* =========================================
-   FIX: THUMBNAIL DI HALAMAN LIST (ESSAYS)
-   ========================================= */
-
-/* Target gambar di dalam preview postingan */
-.post-preview img {
-    /* 1. Batasi Lebarnya */
-    width: 100%;
-    /* Agar responsif di HP */
-    max-width: 640px;
-    /* MAKSIMAL 300px di Desktop (Ganti angka ini sesuai selera) */
-
-    /* 2. Atur Tingginya (Opsional, agar rapi seragam) */
-    height: 160px;
-    object-fit: cover;
-    /* Crop otomatis agar gambar tidak gepeng */
-
-    /* 3. Pemanis Tampilan */
-    border-radius: 4px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #dce3e8;
-    /* Border tipis senada tema */
-    display: block;
-    /* Pastikan gambar berdiri sendiri di baris baru */
-}
-
-/* Jika ingin gambar rata kiri (sudah default), 
-   tapi kalau ingin teks mengalir di sebelahnya (float), kabari saya. 
-   Kode di atas akan membuat gambar menumpuk (stack) di atas ringkasan teks. */

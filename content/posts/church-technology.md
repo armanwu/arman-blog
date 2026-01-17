@@ -1,5 +1,5 @@
 ---
-title: "Gereja dan Teknologi Digital: Membangun Jembatan antara Tradisi dan Inovasi"
+title: "The Church and Digital Technology: Building Bridges Between Tradition and Innovation"
 date: 2023-07-09T21:02:57+07:00
 draft: false
 ---
