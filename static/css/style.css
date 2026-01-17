@@ -478,3 +478,34 @@ p {
         font-size: 0.85rem;
     }
 }
+
+/* =========================================
+   FIX: THUMBNAIL DI HALAMAN LIST (ESSAYS)
+   ========================================= */
+
+/* Target gambar di dalam preview postingan */
+.post-preview img {
+    /* 1. Batasi Lebarnya */
+    width: 100%;
+    /* Agar responsif di HP */
+    max-width: 640px;
+    /* MAKSIMAL 300px di Desktop (Ganti angka ini sesuai selera) */
+
+    /* 2. Atur Tingginya (Opsional, agar rapi seragam) */
+    height: 160px;
+    object-fit: cover;
+    /* Crop otomatis agar gambar tidak gepeng */
+
+    /* 3. Pemanis Tampilan */
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dce3e8;
+    /* Border tipis senada tema */
+    display: block;
+    /* Pastikan gambar berdiri sendiri di baris baru */
+}
+
+/* Jika ingin gambar rata kiri (sudah default), 
+   tapi kalau ingin teks mengalir di sebelahnya (float), kabari saya. 
+   Kode di atas akan membuat gambar menumpuk (stack) di atas ringkasan teks. */
