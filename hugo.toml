@@ -2,6 +2,11 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Arman Wu'
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [menus]
   [[menus.main]]
     name = "Essays"
