@@ -51,6 +51,13 @@
       <description>&lt;p&gt;A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&amp;rsquo;s age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.&lt;/p&gt;&#xA;&lt;p&gt;When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Computational Thinking in Architectural Design Process</title>
+      <link>http://localhost:1313/posts/computational-think/</link>
+      <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
+      <guid>http://localhost:1313/posts/computational-think/</guid>
+      <description>&lt;p&gt;The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
