@@ -4,32 +4,32 @@ date: 2023-07-06T19:28:58+07:00
 draft: false
 ---
 
-Many parents are concerned about the types of games their children play. They worry that some games may not be suitable for their child’s age. However, what they often don’t realize is that every game actually comes with an age rating determined by the developer and publisher. These ratings are designed to guide parents in deciding whether a game is appropriate for their children.
+A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid's age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.
 
-Every game developer and publisher has a target market in mind, and they pay close attention to this when setting an age rating. The rating is based on the game’s content—such as violence, strong language, or sexual themes. For example, a game that contains intense violence will be given a higher age rating than one that is more family-friendly. Parents should understand that these ratings are not just suggestions, but important guidelines to help them choose the right games for their children.
+When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.
 
 ## International Age Rating Coalition (IARC)
-The International Age Rating Coalition (IARC) is an organization that coordinates various age-rating systems worldwide. IARC brings together systems used in regions such as the United States, Europe, and Australia. Its goal is to provide consistent and standardized guidance for parents and players when choosing age-appropriate games.
+There is an organization called the International Age Rating Coalition (IARC) that connects different rating systems from around the world, including the US, Europe, and Australia. Their goal is to make sure parents and players get consistent advice on age-appropriate games.
 
-One widely used system is the Pan European Game Information (PEGI). PEGI is applied in most European countries and assigns ratings based on game content such as violence, coarse language, or sexual material. PEGI ratings cover age categories ranging from 3 years (PEGI 3) to 18 years (PEGI 18), with explanations for the assigned rating.
+One of the most famous systems is PEGI (Pan European Game Information). Used in most of Europe, PEGI rates games based on content like violence or bad words. The ratings go from age 3 (PEGI 3) up to 18 (PEGI 18).
 
-![Game categories according to PEGI](/img/PEGI.png "Kategori game menurut PEGI")
+![Game categories according to PEGI](/img/posts/pegi.png "Kategori game menurut PEGI")
 
-Another well-known system is the Entertainment Software Rating Board (ESRB), used in North America. The ESRB provides ratings similar to PEGI, with categories such as Everyone (E), Teen (T), and Mature (M). ESRB also includes content descriptors to highlight areas of concern.
+Another popular one is the ESRB (Entertainment Software Rating Board), which is used in North America. It is quite similar to PEGI but uses categories like Everyone (E), Teen (T), and Mature (M). ESRB also explains why a game got that rating.
 
-![Game categories according to ESRB](/img/ESRB.png "Kategori game menurut ESRB")
+![Game categories according to ESRB](/img/posts/esrb.png "Kategori game menurut ESRB")
 
 
 ## Indonesia Game Rating System (IGRS)
-In addition to international systems, Indonesia has its own rating framework called the Indonesia Game Rating System (IGRS). IGRS was introduced to give parents and players in Indonesia guidance about game content and age suitability.
+Besides the international ones, Indonesia also has its own system called the Indonesia Game Rating System (IGRS). It was made to guide Indonesian parents and players about game content.
 
-![Game categories according to IGRS](/img/IGRS.png "Kategori game menurut IGRS")
+![Game categories according to IGRS](/img/posts/igrs.png "Kategori game menurut IGRS")
 
-At present, IGRS mainly covers locally developed games. This means that popular international titles created by foreign developers may not carry IGRS ratings. For example, popular games such as Fortnite, Call of Duty, or FIFA may not have an IGRS rating to help parents decide on suitability for their children.
+Right now, IGRS mostly covers games made by local developers. This means many big international games might not have an IGRS label yet. Popular hits like Fortnite, Call of Duty, or FIFA often don't have an Indonesian rating to help parents decide.
 
-This limitation highlights the need to expand IGRS coverage to include international titles widely played in Indonesia. Doing so would allow parents to access more comprehensive information about game content and appropriate age levels.
+Ideally, IGRS should expand to cover these international games too, since they are very popular here. This would give parents better information.
 
-Nevertheless, IGRS remains a positive step in raising awareness of age ratings in Indonesia and providing useful guidance for local games. Parents can certainly benefit from IGRS when considering Indonesian titles. However, it is recommended that they also consult established international systems like PEGI or ESRB for a more complete perspective when selecting games for their children.
+Even so, IGRS is a good start for raising awareness about game ratings in Indonesia. Parents can use IGRS for local games, but for now, it is a good idea to also check international ratings like PEGI or ESRB to get a complete picture before buying games for their kids.
 
 ## Conclusion
-In today’s digital world, understanding game age ratings is key to protecting children from inappropriate content. Parents should recognize that every game comes with a rating provided by its developer or publisher, and that this serves as an important guideline in choosing suitable titles. By relying on international rating systems such as PEGI and ESRB, alongside Indonesia’s IGRS, parents can act as wise guides—ensuring their children enjoy games safely and in ways appropriate for their age.
+Understanding game ratings is the best way to protect children from content they shouldn't see. Parents need to remember that every game has a rating from its creator, and this is a key tool for choosing the right titles. By looking at international systems like PEGI and ESRB, along with our local IGRS, parents can make smarter choices and ensure their kids play safely.

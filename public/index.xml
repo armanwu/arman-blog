@@ -9,13 +9,6 @@
     <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Parametric Tower 01</title>
-      <link>http://localhost:1313/projects/project01/</link>
-      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project01/</guid>
-      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Parametric Tower 02</title>
       <link>http://localhost:1313/projects/project02-copy/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
@@ -30,74 +23,32 @@
       <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Crystal</title>
+      <link>http://localhost:1313/projects/the-crystal/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/the-crystal/</guid>
+      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence</title>
       <link>http://localhost:1313/posts/intuition-algorithm/</link>
       <pubDate>Sun, 22 Sep 2024 16:01:46 +0700</pubDate>
       <guid>http://localhost:1313/posts/intuition-algorithm/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/very_simple_expressive_fragmented_and_distorted_geometr.jpg&#34; alt=&#34;Sketch&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As artificial intelligence (AI) continues to influence various industries, including architecture, it raises important questions: How can the intuitive intelligence built over years of experience be combined with algorithmic logic? Both have powerful roles, and when united, they can create a new harmony in the world of architecture. However, to achieve this balance, architects need to understand how to work with AI while maintaining the essence of their intuition.&lt;/p&gt;</description>
+      <description>&lt;p&gt;The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of algorithms? Both are powerful forces. But for them to work in harmony, architects must learn to wield these tools effectively, rather than being replaced by them.&lt;/p&gt;&#xA;&lt;p&gt;To thrive in this new era, architects need to cultivate specific technical skills that bridge the gap between creative intuition and computational power.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement</title>
       <link>http://localhost:1313/posts/critiquing-bim/</link>
       <pubDate>Mon, 17 Jul 2023 21:01:46 +0700</pubDate>
       <guid>http://localhost:1313/posts/critiquing-bim/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/review-g0968a8216_1920.jpg&#34; alt=&#34;Review&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;As an architect and BIM practitioner, I fully recognize the tremendous potential of Building Information Modeling (BIM) in improving the efficiency and quality of architectural projects. However, in order to ensure ongoing progress, it&amp;rsquo;s crucial for BIM practitioners not to turn a blind eye to any weaknesses that may still exist in this technology. In this article, I will explain why criticism of BIM is important and how having an open-minded approach to criticism can drive advancements in this technology within the architecture industry.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Architecture, Computer, and Philosophy</title>
-      <link>http://localhost:1313/posts/arch-comp-phil/</link>
-      <pubDate>Fri, 14 Jul 2023 21:54:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/arch-comp-phil/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/steve-driscoll-VsBl5PwVZpY-unsplash.jpg&#34; alt=&#34;Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In the ever-evolving world of architecture, the integration of philosophy and computer technology has emerged as a vital component in shaping the future of design. Architects are no longer solely focused on aesthetics and functionality; they are now exploring the profound intersections between architecture, philosophy, and computer science. This article delves into the significance of merging these three fields, highlighting how their interplay contributes to the creation of innovative and socially responsible architectural solutions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Church and Digital Technology: Building Bridges Between Tradition and Innovation</title>
-      <link>http://localhost:1313/posts/church-technology/</link>
-      <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
-      <guid>http://localhost:1313/posts/church-technology/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/samantha-borges-EeS69TTPQ18-unsplash.jpg&#34; alt=&#34;Online Worship&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In today’s rapidly advancing digital era, the church must respond to technological developments wisely. Let us explore a new perspective on the church’s role in the digital world and how it can serve as a community that adapts to cultural and technological change. The church has the opportunity to embrace digital technology in ways that strengthen its treasured traditions while still fostering innovation. Here are some important aspects of how the church can bring together tradition and innovation in this modern digital age.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we handle efficiency and quality in architectural projects. But here is the thing: if we want this technology to keep evolving, we cannot afford to turn a blind eye to its flaws.&lt;/p&gt;&#xA;&lt;p&gt;Being a BIM advocate doesn&amp;rsquo;t mean accepting it blindly. In fact, pointing out where BIM falls short is exactly what we need to drive the industry forward.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Understanding Game Age Ratings: Protecting Children from Inappropriate Content</title>
       <link>http://localhost:1313/posts/game-age-ratings/</link>
       <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
       <guid>http://localhost:1313/posts/game-age-ratings/</guid>
-      <description>&lt;p&gt;Many parents are concerned about the types of games their children play. They worry that some games may not be suitable for their child’s age. However, what they often don’t realize is that every game actually comes with an age rating determined by the developer and publisher. These ratings are designed to guide parents in deciding whether a game is appropriate for their children.&lt;/p&gt;&#xA;&lt;p&gt;Every game developer and publisher has a target market in mind, and they pay close attention to this when setting an age rating. The rating is based on the game’s content—such as violence, strong language, or sexual themes. For example, a game that contains intense violence will be given a higher age rating than one that is more family-friendly. Parents should understand that these ratings are not just suggestions, but important guidelines to help them choose the right games for their children.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Striking a Balance: The Pitfalls of Excessive Social Media Usage in Churches</title>
-      <link>http://localhost:1313/posts/church-and-socmed/</link>
-      <pubDate>Tue, 04 Jul 2023 20:04:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/church-and-socmed/</guid>
-      <description>&lt;p&gt;In the ever-evolving digital era, social media has transformed the way we communicate, interact, and acquire information. Platforms like Facebook, Instagram, Twitter, and YouTube have become powerful tools for spreading messages and connecting with people worldwide. It&amp;rsquo;s not surprising that religious organizations, including churches, have embraced social media to disseminate their religious messages to a broader audience.&lt;/p&gt;&#xA;&lt;h2 id=&#34;benefits-of-social-media-usage&#34;&gt;Benefits of Social Media Usage&lt;/h2&gt;&#xA;&lt;p&gt;Utilizing social media can provide significant benefits for churches. They can announce worship schedules, share spiritual reflections, upload religious lectures, and spread messages of love and hope to congregations and the general public. Moreover, social media enables churches to build online communities, facilitate discussions and interactions among the congregation, and provide easier accessibility for individuals who cannot physically attend church.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Church and Virtual Reality: Exploring the Intersection</title>
-      <link>http://localhost:1313/posts/church-and-vr/</link>
-      <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/church-and-vr/</guid>
-      <description>&lt;p&gt;Have you ever felt that our lives are constantly moving at a rapid pace? Every day, we&amp;rsquo;re confronted with technological advancements that change the way we interact, learn, and even worship. Just think about it – in just a few short years, we have witnessed developments like smartphones that unite the world at our fingertips and streaming technology that brings entertainment directly to our screens.&lt;/p&gt;&#xA;&lt;p&gt;But what does all of this mean for our religious lives? Is there room for technologies like virtual reality (VR) within our churches? We&amp;rsquo;ll delve into the fascinating topic of &amp;ldquo;Church and Virtual Reality.&amp;rdquo; We&amp;rsquo;ll examine how these technological advancements can impact the way we worship, interact with fellow congregants, and experience the presence of God in an increasingly digitally connected world.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Exploring the Techniques of Generative Design</title>
-      <link>http://localhost:1313/posts/gd-techniques/</link>
-      <pubDate>Fri, 23 Jun 2023 22:01:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/gd-techniques/</guid>
-      <description>&lt;p&gt;Generative design, as a powerful approach in architecture, encompasses a range of techniques that push the boundaries of creativity and innovation. By leveraging computational algorithms, generative design unlocks new possibilities and opens up uncharted territories in the realm of architectural exploration. Among the many techniques used in generative design, several prominent ones stand out, including cellular automata, genetic algorithms, shape grammar, and more.&lt;/p&gt;&#xA;&lt;p&gt;Cellular automata, first introduced by mathematician John von Neumann and popularized by scientist Stephen Wolfram, provide a fascinating tool for generative design. Cellular automata involve a grid of cells, each governed by a set of rules and influenced by its neighboring cells. Through iterative computations, these rules determine the evolution and transformation of the cells, resulting in intricate and emergent patterns. In architecture, cellular automata can be applied to generate complex spatial configurations or dynamic façade designs that adapt to varying environmental conditions.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Discovering Harmony in Architecture with Generative Design</title>
-      <link>http://localhost:1313/posts/generative-design/</link>
-      <pubDate>Thu, 22 Jun 2023 20:44:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/generative-design/</guid>
-      <description>&lt;p&gt;In the complex world of architecture, generative design has emerged, opening doors to thousands of possibilities for harmonious and aesthetic designs. The collaboration between humans and computers gives rise to surprising solutions, unearthing new ideas with unlimited freedom.&lt;/p&gt;&#xA;&lt;p&gt;Generative design involves the consideration of complex factors, including spatial layout, lighting, and energy efficiency. In this remarkable process, algorithms can be programmed to optimize designs based on specific criteria, creating unexpected harmony in the combination of variables. A symbiosis occurs between human intelligence and computational power, where architects provide insights and intuition, while generative design translates those ideas into reality.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Computational Thinking in Architectural Design Process</title>
-      <link>http://localhost:1313/posts/computational-think/</link>
-      <pubDate>Thu, 06 Jan 2022 21:44:46 +0700</pubDate>
-      <guid>http://localhost:1313/posts/computational-think/</guid>
-      <description>&lt;p&gt;The use of computers in the field of architectural design initially only involved digitizing tasks that were traditionally done manually. Computer-based modeling or drawing still relied on additive logic, which involved adding overlapped information without associative relationships, heavily relying on the designer&amp;rsquo;s consistency. This additive logic persisted for a long time as it was considered stable for exploring and refining variations through traditional image media. However, this logic had limitations as it lacked connections between depicted elements and couldn&amp;rsquo;t incorporate physically relevant aspects that shape the generation of real-world forms. These limitations prompted architects to develop their design mindset.&lt;/p&gt;</description>
+      <description>&lt;p&gt;A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&amp;rsquo;s age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.&lt;/p&gt;&#xA;&lt;p&gt;When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About Me</title>
