@@ -10,6 +10,13 @@
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Parametric Tower 02</title>
+      <link>http://localhost:1313/projects/project02-copy-2/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/project02-copy-2/</guid>
+      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Parametric Tower 02</title>
       <link>http://localhost:1313/projects/project02-copy/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/project02-copy/</guid>
@@ -44,11 +51,32 @@
       <description>&lt;p&gt;As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we handle efficiency and quality in architectural projects. But here is the thing: if we want this technology to keep evolving, we cannot afford to turn a blind eye to its flaws.&lt;/p&gt;&#xA;&lt;p&gt;Being a BIM advocate doesn&amp;rsquo;t mean accepting it blindly. In fact, pointing out where BIM falls short is exactly what we need to drive the industry forward.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Bridging the Gap: Balancing Tradition and Innovation in the Digital Church</title>
+      <link>http://localhost:1313/posts/church-technology/</link>
+      <pubDate>Sun, 09 Jul 2023 21:02:57 +0700</pubDate>
+      <guid>http://localhost:1313/posts/church-technology/</guid>
+      <description>&lt;p&gt;We live in a world that changes fast. With technology advancing every day, the church faces a unique challenge: how do we respond? Do we resist the tide, or do we learn to surf?&lt;/p&gt;&#xA;&lt;p&gt;Rather than seeing technology as a threat to tradition, I believe we should view it as a bridge. The church has a massive opportunity to embrace the digital world, not to replace our treasured traditions, but to amplify them. It is about becoming a community that adapts to the times while staying deeply rooted in its values.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Understanding Game Age Ratings: Protecting Children from Inappropriate Content</title>
       <link>http://localhost:1313/posts/game-age-ratings/</link>
       <pubDate>Thu, 06 Jul 2023 19:28:58 +0700</pubDate>
       <guid>http://localhost:1313/posts/game-age-ratings/</guid>
       <description>&lt;p&gt;A lot of parents worry about the games their children play. They are often afraid that some games might not be suitable for their kid&amp;rsquo;s age. But actually, parents need to know that every game already comes with an age rating set by the developers. These ratings exist to help parents decide if a game is okay for their children or not.&lt;/p&gt;&#xA;&lt;p&gt;When making a game, developers and publishers already have a target audience in mind. They set the age rating based on what is inside the game—like violence, bad language, or adult themes. For instance, a game with intense fighting will have a higher age rating than a family-friendly game. Parents should treat these ratings as important guidelines, not just suggestions, to pick the right games.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Church and Virtual Reality: Exploring the Intersection</title>
+      <link>http://localhost:1313/posts/church-and-vr/</link>
+      <pubDate>Sun, 02 Jul 2023 20:04:46 +0700</pubDate>
+      <guid>http://localhost:1313/posts/church-and-vr/</guid>
+      <description>&lt;p&gt;It feels like every time we blink, the world moves a little faster. Technology has fundamentally shifted how we learn, how we work, and how we talk to each other. We have accepted that smartphones keep us connected and streaming services bring entertainment to our living rooms.&lt;/p&gt;&#xA;&lt;p&gt;But when it comes to our spiritual lives, the conversation gets a bit more complicated. Is there meaningful space for cutting-edge tech like Virtual Reality (VR) inside the church? It sounds like science fiction, but it is a reality we are already facing. I want to explore how these digital advancements might change the way we worship, interact with our community, and experience faith in a world that is increasingly glued to screens.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploring the Techniques of Generative Design</title>
+      <link>http://localhost:1313/posts/gen-design-techniques/</link>
+      <pubDate>Fri, 23 Jun 2023 22:01:46 +0700</pubDate>
+      <guid>http://localhost:1313/posts/gen-design-techniques/</guid>
+      <description>&lt;p&gt;Generative design is often talked about as a single concept, but in reality, it is a collection of distinct mathematical and computational techniques. For architects, these aren&amp;rsquo;t just abstract formulas; they are tools that allow us to explore design territories that human intuition alone might never reach.&lt;/p&gt;&#xA;&lt;p&gt;By leveraging algorithms, we can push past simple geometry into complex, optimized forms. Here is a look at some of the most prominent techniques that drive this process.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Computational Thinking in Architectural Design Process</title>
