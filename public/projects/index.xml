@@ -6,27 +6,20 @@
     <description>Recent content in Projects on Arman Wu</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Parametric Tower 02</title>
-      <link>http://localhost:1313/projects/project02-copy-2/</link>
-      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project02-copy-2/</guid>
-      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
+      <title>Titanium Clash</title>
+      <link>http://localhost:1313/projects/titanium-clash/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/titanium-clash/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/projects/titanium-clash/titanium-clash-5.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;&lt;strong&gt;Titanium Clash&lt;/strong&gt; is an experimental project exploring the boundaries between algorithmic chaos and architectural order. Drawing inspiration from the fragmented and non-rectilinear language of deconstructivism, this project investigates how code can be used to generate complex spatial collisions that would be tedious to model manually.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-process-code-as-the-sketchpad&#34;&gt;The Process: Code as the Sketchpad&lt;/h2&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/img/projects/titanium-clash/titanium-clash-1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;p&gt;Instead of starting with a sketch or a massing model, this project began with a script written in &lt;strong&gt;Julia&lt;/strong&gt;. I chose Julia for its high-performance computational capabilities, allowing for rapid iteration of complex geometric calculations.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Parametric Tower 02</title>
       <link>http://localhost:1313/projects/project02-copy/</link>
       <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/project02-copy/</guid>
-      <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Parametric Tower 02</title>
-      <link>http://localhost:1313/projects/project02/</link>
-      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/project02/</guid>
       <description>&lt;p&gt;(Di sini isi detail, gambar-gambar render resolusi tinggi, dan penjelasan teknis&amp;hellip;)&lt;/p&gt;</description>
     </item>
     <item>
