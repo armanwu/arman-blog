@@ -2,11 +2,11 @@
 title : "Flux Pavilion"
 date : 2026-01-20
 draft : false
-image : "/img/projects/flux-pavilion/flux-pavilion-1.png"
+image : "/img/projects/flux-pavilion/flux-pavilion-1.jpg"
 layout : "single-no-meta"
 ---
 
-{{< figure src="/img/projects/flux-pavilion/flux-pavilion-1.png" >}}
+{{< figure src="/img/projects/flux-pavilion/flux-pavilion-1.jpg" >}}
 
 **Flux Pavilion** is an exploration of continuity and flow. In architecture, we often deal with rigid lines and static forms, but nature operates on curves and rhythms. This project attempts to capture the essence of movement—like a sound wave or a rolling ocean—frozen in a structural shell.
 
@@ -26,10 +26,10 @@ Instead of manually modeling each curve, the script modulates a series of arches
 
 The goal of this parametric geometry is to influence human behavior. The "peaks" of the wave create grand, open entryways that invite people in, while the "valleys" dip down to create more intimate, enclosed areas.
 
-{{< figure src="/img/projects/flux-pavilion/flux-pavilion-5.png" >}}
+{{< figure src="/img/projects/flux-pavilion/flux-pavilion-5.jpg" >}}
 
 ## Visualization
 
 Rendered with **Nano Banana**, the visualization emphasizes lightness. The white, rib-like cladding contrasts with the large glazed openings, allowing sunlight to flood the interior. It transforms abstract math into a welcoming, breathable public space.
 
-{{< figure src="/img/projects/flux-pavilion/flux-pavilion-4.png" >}}
+{{< figure src="/img/projects/flux-pavilion/flux-pavilion-4.jpg" >}}

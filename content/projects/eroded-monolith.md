@@ -2,11 +2,11 @@
 title : "Eroded Monolith"
 date : 2026-01-20
 draft : false
-image : "/img/projects/eroded-monolith/eroded-monolith-1.png"
+image : "/img/projects/eroded-monolith/eroded-monolith-1.jpg"
 layout : "single-no-meta"
 ---
 
-{{< figure src="/img/projects/eroded-monolith/eroded-monolith-1.png" >}}
+{{< figure src="/img/projects/eroded-monolith/eroded-monolith-1.jpg" >}}
 
 **Eroded Monolith** challenges the traditional typology of the skyscraper. Usually, high-rise buildings are sealed, air-conditioned glass boxes that isolate people from the elements. This project asks: What happens if we "break" the box to let nature in?
 
@@ -27,6 +27,6 @@ Rendered with **Nano Banana**, the visualization highlights the stark contrast i
 * **The Shell:** The exterior is sleek, reflective glass—representative of the corporate world.
 * **The Core:** The eroded interior is clad in warm timber and filled with hanging gardens.
 
-{{< figure src="/img/projects/eroded-monolith/eroded-monolith-3.png" >}}
+{{< figure src="/img/projects/eroded-monolith/eroded-monolith-3.jpg" >}}
 
 This "erosion" functions as a communal lung for the building. It creates shaded terraces, breakout spaces, and vertical parks that connect different floors. It proves that even in a massive tower, we can use code to carve out spaces that feel intimate and human.
