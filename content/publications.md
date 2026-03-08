@@ -39,7 +39,12 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 
 ## Talks
 
+### 2026
+
+- Creative Expo UPI: Inovasi Teknologi Perancangan Konstruksi: Sustainibility, Future Builders Mindset, dan Best Practices - February 10, 2026
+
 ### 2025 
+- 
 - Autodesk: Transformasi Jakarta Menuju Smart City Melalui Pemanfaatan Building Information Modeling - December 4, 2025
 - D5 Render: Efficient Visualization Workflow with D5 Render - October 1, 2025
 - ISBI: Keterbatasan dan Potensi AI dalam Dunia Seni dan Desain - September 24, 2025
