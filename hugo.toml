@@ -31,3 +31,6 @@ title = 'Arman Wu'
   [services]
   [services.googleAnalytics]
     ID = 'G-96RWB4ME5V'
+  
+  [outputs]
+  home = ["HTML", "RSS", "JSON"]
