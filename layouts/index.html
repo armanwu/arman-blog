@@ -2,28 +2,27 @@
 
 <section class="intro">
 
-    <div class="profile-container">
-
+    <div class="hero-top">
         <img src="img/avatar.png" alt="Arman Wu" class="profile-pic">
-
     </div>
 
     <h1>Arman Wu</h1>
 
-    <p style="font-weight: 600; margin-top: -10px; margin-bottom: 25px;">
-        Architecture // Computer Science // Design Cognition
-    </p>
+    <div class="hero-tagline">
+        <span class="tag-pill">Architecture</span>
+        <span class="tag-pill">Computer Science</span>
+        <span class="tag-pill">Design Cognition</span>
+    </div>
 
     <p>
         I navigate the complex intersection of <strong>architectural form</strong>, <strong>digital systems</strong>,
         and <strong>design cognition</strong>.
         Bridging the gap between abstract computation and practical intuition, I explore how code serves as a
-        language for architectural expression—integrating <strong>professional BIM workflows</strong> with
-        <strong>computational and open-source tools</strong>.
+        language for architectural expression—integrating <strong>BIM workflows</strong>,
+        <strong>parametric design</strong>, and <strong>computational tools</strong>.
     </p>
 
     <div class="social-links">
-
         <a href="mailto:arman.wu@gmail.com" aria-label="Email">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -31,7 +30,6 @@
                 <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
         </a>
-
         <a href="https://scholar.google.com/citations?user=kPidohUAAAAJ&hl=en&oi=sra" target="_blank"
             aria-label="Google Scholar">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -40,7 +38,6 @@
                 <path d="M6 12v5c3 0 6 1 6 1s3-1 6-1v-5" />
             </svg>
         </a>
-
         <a href="https://github.com/armanwu" target="_blank" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -49,7 +46,6 @@
                 </path>
             </svg>
         </a>
-
         <a href="https://www.linkedin.com/in/arman-arisman-42042b4b" target="_blank" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -58,7 +54,6 @@
                 <circle cx="4" cy="4" r="2"></circle>
             </svg>
         </a>
-
         <a href="https://www.youtube.com/c/armanwu" target="_blank" aria-label="YouTube">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -68,7 +63,6 @@
                 <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon>
             </svg>
         </a>
-
         <a href="https://www.instagram.com/arman_wu/" target="_blank" aria-label="Instagram">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -84,7 +78,12 @@
 {{ $projects := where .Site.RegularPages "Section" "projects" }}
 {{ if $projects }}
 <section class="projects-section">
-    <h2>Recent Projects</h2>
+
+    <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <div class="section-divider-label">Recent Projects</div>
+        <div class="section-divider-line"></div>
+    </div>
 
     <div class="project-grid">
         {{ range first 6 $projects }}
@@ -105,14 +104,20 @@
         {{ end }}
     </div>
 
-    <div style="margin-top: 20px; text-align: right;">
-        <a href="/projects" style="font-size: 0.9rem; font-weight: 600; color: #20B2AA;">View All Projects →</a>
+    <div class="view-all-row">
+        <a href="/projects" class="view-all-link">View All Projects →</a>
     </div>
+
 </section>
 {{ end }}
 
 <section class="posts-section">
-    <h2>Recent Essays</h2>
+
+    <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <div class="section-divider-label">Recent Essays</div>
+        <div class="section-divider-line"></div>
+    </div>
 
     {{ $posts := where .Site.RegularPages "Section" "posts" }}
     {{ range first 3 $posts }}
@@ -125,9 +130,10 @@
     </div>
     {{ end }}
 
-    <div style="margin-top: 20px; text-align: right;">
-        <a href="/posts" style="font-size: 0.9rem; font-weight: 600; color: #20B2AA;">View All Essays →</a>
+    <div class="view-all-row">
+        <a href="/posts" class="view-all-link">View All Essays →</a>
     </div>
+
 </section>
 
 {{ end }}
