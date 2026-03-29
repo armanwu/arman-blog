@@ -27,3 +27,7 @@ title = 'Arman Wu'
     name = "About"
     pageRef = "/about"
     weight = 40
+  
+  [services]
+  [services.googleAnalytics]
+    ID = 'G-96RWB4ME5V'
