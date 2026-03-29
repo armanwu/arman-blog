@@ -4,14 +4,12 @@
     <p>Essays, tutorials, and notes on architecture and technology. A repository of practical knowledge and critical
         thinking for the digital age.</p>
 </section>
-
 <div class="post-feed">
     {{ range .Pages }}
     <article class="post-preview">
-        <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p class="summary">{{ .Summary | truncate 160 }}</p>
-        <a href="{{ .Permalink }}" class="read-more">Read more →</a>
     </article>
     {{ end }}
 </div>
