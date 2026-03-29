@@ -3,11 +3,11 @@ title = 'About Me'
 draft = false
 layout = 'single-no-meta'
 +++
-I am **Dr. Arman Arisman (Arman Wu)**, an architect and BIM manager based in Indonesia. With over 15 years of experience in the architecture and construction industry, my work sits at the intersection of **architectural thinking**, **computational design**, and **digital workflows**.
+I am **Dr. Arman Arisman (Arman Wu)**, an architect and technology manager based in Indonesia. With over 15 years of experience in public planning, I navigate the complex intersection of **architectural form**, **digital systems**, and **design cognition**.
 
-### Architectural Computing
+### The Intersection of Logic and Intuition
 
-My expertise in **architectural computing** spans BIM implementation, parametric design exploration, and the use of algorithms as a medium for architectural expression. As a licensed architect, I bring both design sensibility and computational thinking to how buildings are coordinated and realized digitally. I lead BIM teams, design digital workflows, and explore how computational logic can rationalize geometric and spatial complexity.
+In my practice, I do more than just produce drawings. I design workflows. My interest lies in how algorithmic logic can rationalize geometric complexity and how digital tools influence the human thought process. This curiosity led me to specialize in **Building Information Modeling (BIM)**, **Computational Design**, and **Human–Computer Interaction (HCI)**. I see code not just as a tool, but as a language to explore architectural expression.
 
 ### Research & Cognition
 
@@ -15,13 +15,13 @@ My academic journey—spanning bachelor's, master's, and doctoral studies—has 
 
 ### Beyond the Studio
 
-Beyond my professional work, I enjoy tinkering with technology as a form of curiosity. I actively contribute to the **Fedora Project** and write for **Fedora Magazine**, sharing knowledge around open-source software and digital tools. I find that exploring different systems and workflows often informs how I think about design problems.
+Beyond the studio and academia, I enjoy tinkering with technology as a form of curiosity. I actively contribute to the **Fedora Project** and write for **Fedora Magazine**, sharing knowledge around open-source software and digital tools. I find that exploring different systems and workflows often informs how I think about design problems.
 
 ---
 
 ### Connect
 
-I am always open to discussing research collaborations, architectural computation, or BIM implementation.
+I am always open to discussing research collaborations, architectural computation, or the latest in digital design tools.
 
 * **Email:** [arman.wu@gmail.com](mailto:arman.wu@gmail.com)
 * **Professional:** [LinkedIn Profile](https://www.linkedin.com/in/arman-arisman-42042b4b)
