@@ -41,6 +41,8 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 
 ### 2026
 
+- CCMA: Rahasia Penyusunan  Rencana yang Efektif untuk Proyek Berbasis BIM - April 25, 2026
+- ArchID: Geometri Massa Hunian Vertikal yang Merespons Kota - April 13, 2026
 - Creative Expo UPI: Inovasi Teknologi Perancangan Konstruksi: Sustainibility, Future Builders Mindset, dan Best Practices - February 10, 2026
 
 ### 2025 
