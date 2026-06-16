@@ -1,6 +1,6 @@
 ---
 title: "BIM Represents Buildings Better Than It Represents Design Intent"
-date: 2026-06-16T16:04:46+07:00
+date: 2026-06-16T08:04:46+07:00
 draft: false
 ---
 
