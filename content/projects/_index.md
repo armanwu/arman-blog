@@ -3,4 +3,4 @@ title = "Projects"
 layout = "list"
 +++
 
-Here is a selection of my computational design works and architectural experiments.
+Selected projects exploring architecture through computation, digital systems, and experimental design.

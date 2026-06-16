@@ -6,25 +6,19 @@
         <img src="img/avatar.png" alt="Arman Wu" class="profile-pic">
         <div>
             <div class="hero-name">Dr. Arman Arisman</div>
-            <div class="hero-loc">Indonesia</div>
+            <div class="hero-loc">Architect · Design Technologist · Researcher</div>
         </div>
     </div>
 
     <h1>Arman Wu</h1>
 
     <div class="hero-tagline">
-        <span class="tag-pill">Architecture</span>
-        <span class="tag-pill">Computer Science</span>
-        <span class="tag-pill">Design Cognition</span>
+        Architecture // Computation // Design Cognition
     </div>
 
     <p>
-        I navigate the complex intersection of <strong>architectural form</strong>, <strong>digital
-            systems</strong>,
-        and <strong>design cognition</strong>.
-        Bridging the gap between abstract computation and practical intuition, I explore how code serves as a
-        language for architectural expression—integrating <strong>BIM workflows</strong>,
-        <strong>parametric design</strong>, and <strong>computational tools</strong>.
+        I explore how digital tools shape architectural ideas, design decisions, and the way architects think—from BIM
+        and parametric systems to artificial intelligence.
     </p>
 
     <div class="social-links">
@@ -91,7 +85,7 @@
     </div>
 
     <div class="project-grid">
-        {{ range first 6 $projects }}
+        {{ range first 3 $projects }}
         <a href="{{ .Permalink }}" class="project-card">
             <div class="project-image">
                 {{ if .Params.image }}
