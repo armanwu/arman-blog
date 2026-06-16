@@ -4,6 +4,8 @@ date: 2023-07-17T21:01:46+07:00
 draft: false
 ---
 
+![The Importance of Critiquing BIM in the Architecture World](/img/posts/critiquing-bim.png)
+
 As an architect and daily user of Building Information Modeling (BIM), I am the first to admit its tremendous value. It has undeniably revolutionized how we handle efficiency and quality in architectural projects. But here is the thing: if we want this technology to keep evolving, we cannot afford to turn a blind eye to its flaws.
 
 Being a BIM advocate doesn't mean accepting it blindly. In fact, pointing out where BIM falls short is exactly what we need to drive the industry forward.

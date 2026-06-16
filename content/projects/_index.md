@@ -3,4 +3,6 @@ title = "Projects"
 layout = "list"
 +++
 
-Selected projects exploring architecture through computation, digital systems, and experimental design.
+A growing collection of architectural experiments and computational design studies.
+
+
