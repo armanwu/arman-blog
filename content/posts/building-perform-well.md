@@ -2,6 +2,7 @@
 title: "A Building Can Perform Well and Still Feel Wrong"
 date: 2026-06-17T08:04:46+07:00
 draft: false
+images: ["/img/posts/building-perform-well.png)"]
 ---
 
 ![A Building Can Perform Well and Still Feel Wrong](/img/posts/building-perform-well.png)
