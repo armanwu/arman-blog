@@ -6,9 +6,13 @@
 <div class="post-feed">
     {{ range .Pages }}
     <article class="post-preview">
-        <span class="meta-date">{{ .Date.Format "Jan 2, 2006" }} · {{ .ReadingTime }} min read</span>
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p class="summary">{{ .Summary | truncate 160 }}</p>
+        <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</div>
+        {{ with .Params.category }}
+        {{ $cat := index $.Site.Data.categories . }}
+        <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+        {{ end }}
+        <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="post-summary">{{ .Summary | truncate 160 }}</p>
     </article>
     {{ end }}
 </div>

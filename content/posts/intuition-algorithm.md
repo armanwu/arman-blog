@@ -1,6 +1,8 @@
 ---
 title: "Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence"
 date: 2024-09-22T16:01:46+07:00
+description: "What architects need to learn, from programming to algorithmic thinking, to work with AI rather than be replaced by it."
+category: "AI & Computation"
 draft: false
 ---
 

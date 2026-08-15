@@ -1,6 +1,8 @@
 ---
 title: "Computational Thinking in Architectural Design Process"
 date: 2022-01-06T21:44:46+07:00
+description: "From additive to associative logic: how computational thinking reshaped the architectural design process since CAD's early days."
+category: "AI & Computation"
 draft: false
 ---
 

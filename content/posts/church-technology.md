@@ -1,6 +1,8 @@
 ---
 title: "Bridging the Gap: Balancing Tradition and Innovation in the Digital Church"
 date: 2023-07-09T21:02:57+07:00
+description: "How churches can adopt digital tools to extend community and connection without losing their traditions."
+category: "Faith & Technology"
 draft: false
 ---
 

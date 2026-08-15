@@ -2,10 +2,12 @@
 <article class="full-article">
 
     <header class="article-header">
-        <span class="article-tag">Essays</span>
+        {{ with .Params.category }}
+        {{ $cat := index $.Site.Data.categories . }}
+        <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+        {{ end }}
         <h1>{{ .Title }}</h1>
         <div class="article-meta-row">
-            <img src="/img/avatar.png" alt="Arman Wu" class="article-avatar">
             <span class="article-author">Arman Wu</span>
             <span class="meta-dot"></span>
             <span class="article-date">{{ .Date.Format "Jan 2, 2006" }}</span>

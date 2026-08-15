@@ -2,6 +2,9 @@ baseURL = 'https://armanwu.github.io/'
 languageCode = 'en-us'
 title = 'Arman Wu'
 
+[params]
+  description = "Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design."
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

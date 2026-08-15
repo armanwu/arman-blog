@@ -1,6 +1,8 @@
 ---
 title: "A Building Can Perform Well and Still Feel Wrong"
 date: 2026-06-17T08:04:46+07:00
+description: "Buildings can meet every technical target and still feel wrong. Why performance data alone cannot guarantee good architecture."
+category: "Design Cognition"
 draft: false
 images: ["/img/posts/building-perform-well.png"]
 ---
