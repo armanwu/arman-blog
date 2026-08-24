@@ -9,6 +9,8 @@ Selected publications and talks on architecture, computation, and design cogniti
 
 ## Books
 
+Arisman, A. (2026). *Desain dan Kepastian Terlalu Dini: Arsitektur, BIM, dan Bahasa "Konstruksi"*. ITB Press. [Book Link](https://www.itbpress.id/desain-dan-kepastian-terlalu-dini-arsitektur-bim-dan-bahasa-konstruksi/)
+
 Arisman, A. (2025). *Model, Sistem, dan Ruang yang Belum Terhubung: Kajian Reflektif Terbuka terhadap SOP Implementasi BIM 2024 Kementerian PU dari Perspektif Arsitek Perencana* (Self-published, v1.0). Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). [Repository](https://github.com/armanwu/kajian-sop-bim) · [PDF](https://github.com/armanwu/kajian-sop-bim/blob/main/arisman-2025-model-sistem-dan-ruang.pdf)
 
 ## Journal Articles
