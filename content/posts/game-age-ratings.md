@@ -2,7 +2,7 @@
 title: "Understanding Game Age Ratings: Protecting Children from Inappropriate Content"
 date: 2023-07-06T19:28:58+07:00
 description: "A practical guide to how game age rating systems like PEGI and IARC help parents choose age-appropriate games."
-category: "Miscellaneous"
+category: "Culture & Technology"
 draft: false
 ---
 

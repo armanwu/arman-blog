@@ -2,7 +2,7 @@
 title: "BIM Represents Buildings Better Than It Represents Design Intent"
 date: 2026-06-16T08:04:46+07:00
 description: "BIM stores what architects decide, but rarely why - a look at the gap between what BIM models capture and the design intent behind them."
-category: "BIM"
+category: "Architecture & BIM"
 draft: false
 ---
 

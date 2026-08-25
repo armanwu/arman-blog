@@ -2,7 +2,7 @@
 title: "The Importance of Critiquing BIM in the Architecture World: Fostering Open-Mindedness for Advancement"
 date: 2023-07-17T21:01:46+07:00
 description: "BIM has transformed architecture, but advancing it further means being honest about where it still falls short."
-category: "BIM"
+category: "Architecture & BIM"
 draft: false
 ---
 

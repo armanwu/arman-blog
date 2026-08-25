@@ -2,7 +2,7 @@
 title: "Church and Virtual Reality: Exploring the Intersection"
 date: 2023-07-02T20:04:46+07:00
 description: "Exploring whether virtual reality has a meaningful place in worship, church community, and spiritual life."
-category: "Faith & Technology"
+category: "Culture & Technology"
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Exploring the Techniques of Generative Design"
 date: 2023-06-23T22:01:46+07:00
 description: "An overview of generative design techniques, from cellular automata to algorithmic form-finding, and how architects use them."
-category: "Generative Design"
+category: "Computation & Generative AI"
 draft: false
 ---
 

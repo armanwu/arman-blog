@@ -1,12 +1,8 @@
-BIM:
+Architecture & BIM:
   color: teal
+Computation & Generative AI:
+  color: sky
 Design Cognition:
   color: aqua
-AI & Computation:
-  color: sky
-Generative Design:
+Culture & Technology:
   color: blue
-Faith & Technology:
-  color: violet
-Miscellaneous:
-  color: purple
