@@ -74,18 +74,18 @@
 
 </section>
 
-{{ $projects := where .Site.RegularPages "Section" "projects" }}
-{{ if $projects }}
+{{ $works := where .Site.RegularPages "Section" "works" }}
+{{ if $works }}
 <section class="projects-section">
 
     <div class="section-divider">
         <div class="section-divider-line"></div>
-        <div class="section-divider-label">Recent Projects</div>
+        <div class="section-divider-label">Recent Works</div>
         <div class="section-divider-line"></div>
     </div>
 
     <div class="project-grid">
-        {{ range first 3 $projects }}
+        {{ range first 3 $works }}
         <a href="{{ .Permalink }}" class="project-card">
             <div class="project-image">
                 {{ if .Params.image }}
@@ -104,7 +104,7 @@
     </div>
 
     <div class="view-all-row">
-        <a href="/projects" class="view-all-link">View All Projects →</a>
+        <a href="/works" class="view-all-link">View All Works →</a>
     </div>
 
 </section>
