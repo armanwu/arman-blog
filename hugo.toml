@@ -27,6 +27,11 @@ title = 'Arman Wu'
     weight = 30
 
   [[menus.main]]
+    name = "Code"
+    pageRef = "/code"
+    weight = 35
+
+  [[menus.main]]
     name = "About"
     pageRef = "/about"
     weight = 40
