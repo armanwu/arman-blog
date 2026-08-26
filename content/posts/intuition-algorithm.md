@@ -6,7 +6,7 @@ category: "Design Cognition"
 draft: false
 ---
 
-![Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence](/img/posts/intuition-algorithm.png)
+![Intuition and Algorithm in Harmony: Architects in the Age of Artificial Intelligence](/img/posts/intuition-algorithm.webp)
 
 The rise of AI in architecture raises a critical question: How do we merge the intuitive intelligence built over years of practice with the logic of algorithms? Both are powerful forces. But for them to work in harmony, architects must learn to wield these tools effectively, rather than being replaced by them.
 

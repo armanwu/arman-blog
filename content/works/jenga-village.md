@@ -2,11 +2,11 @@
 title : "Jenga Village"
 date : 2026-01-20
 draft : false
-image : "/img/projects/jenga-village/jenga-village-1.jpg"
+image : "/img/projects/jenga-village/jenga-village-1.webp"
 layout : "single-no-meta"
 ---
 
-{{< figure src="/img/projects/jenga-village/jenga-village-1.jpg" >}}
+{{< figure src="/img/projects/jenga-village/jenga-village-1.webp" >}}
 
 **Jenga Village** is a playful yet serious exploration of modular housing. While modern apartment blocks often feel repetitive and isolating, this project asks: Can we use code to create a "vertical village" where every unit feels unique?
 
@@ -16,7 +16,7 @@ Using the metaphor of the game *Jenga*, the design stacks living units (voxels) 
 
 Written in **Julia**, the script for this project operates on a voxel-based grid system. Unlike traditional modeling where we draw walls and floors, here the code treats space as a collection of 3D pixels.
 
-{{< figure src="/img/projects/jenga-village/jenga-village-3.jpg" >}}
+{{< figure src="/img/projects/jenga-village/jenga-village-3.webp" >}}
 
 The algorithm generates these stacks with specific rules:
 1.  **Adjacency:** Units must connect logically to support one another.
@@ -33,6 +33,6 @@ This transforms a high-density complex into a series of garden homes. The "rando
 
 The scene was rendered using **Nano Banana**, focusing on the warmth of the materials to contrast the digital origin of the form.
 
-{{< figure src="/img/projects/jenga-village/jenga-village-2.jpg" >}}
+{{< figure src="/img/projects/jenga-village/jenga-village-2.webp" >}}
 
 I combined exposed concrete with timber cladding to give the voxels a tactile, human scale. The extensive greenery placed on the terraces softens the hard edges of the geometry, blending the architecture into the surrounding green hill. It is a vision of how computational design can coexist with nature.

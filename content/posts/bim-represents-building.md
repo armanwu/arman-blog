@@ -6,7 +6,7 @@ category: "Architecture & BIM"
 draft: false
 ---
 
-![BIM Represents Buildings Better Than It Represents Design Intent](/img/posts/bim-represent-building.png)
+![BIM Represents Buildings Better Than It Represents Design Intent](/img/posts/bim-represent-building.webp)
 
 BIM is very good at describing buildings. A BIM model can store dimensions, materials, quantities, systems, and technical data. It can also help architects coordinate drawings, find clashes, and manage project information.
 

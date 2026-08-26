@@ -15,17 +15,17 @@ There is an organization called the International Age Rating Coalition (IARC) th
 
 One of the most famous systems is PEGI (Pan European Game Information). Used in most of Europe, PEGI rates games based on content like violence or bad words. The ratings go from age 3 (PEGI 3) up to 18 (PEGI 18).
 
-![Game categories according to PEGI](/img/posts/pegi.png "Kategori game menurut PEGI")
+![Game categories according to PEGI](/img/posts/pegi.webp "Kategori game menurut PEGI")
 
 Another popular one is the ESRB (Entertainment Software Rating Board), which is used in North America. It is quite similar to PEGI but uses categories like Everyone (E), Teen (T), and Mature (M). ESRB also explains why a game got that rating.
 
-![Game categories according to ESRB](/img/posts/esrb.png "Kategori game menurut ESRB")
+![Game categories according to ESRB](/img/posts/esrb.webp "Kategori game menurut ESRB")
 
 
 ## Indonesia Game Rating System (IGRS)
 Besides the international ones, Indonesia also has its own system called the Indonesia Game Rating System (IGRS). It was made to guide Indonesian parents and players about game content.
 
-![Game categories according to IGRS](/img/posts/igrs.png "Kategori game menurut IGRS")
+![Game categories according to IGRS](/img/posts/igrs.webp "Kategori game menurut IGRS")
 
 Right now, IGRS mostly covers games made by local developers. This means many big international games might not have an IGRS label yet. Popular hits like Fortnite, Call of Duty, or FIFA often don't have an Indonesian rating to help parents decide.
 

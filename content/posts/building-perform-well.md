@@ -4,10 +4,10 @@ date: 2026-06-17T08:04:46+07:00
 description: "Buildings can meet every technical target and still feel wrong. Why performance data alone cannot guarantee good architecture."
 category: "Architecture & BIM"
 draft: false
-images: ["/img/posts/building-perform-well.png"]
+images: ["/img/posts/building-perform-well.webp"]
 ---
 
-![A Building Can Perform Well and Still Feel Wrong](/img/posts/building-perform-well.png)
+![A Building Can Perform Well and Still Feel Wrong](/img/posts/building-perform-well.webp)
 
 Today, architects can measure buildings in more detail than ever before. We can calculate energy use, daylight, temperature, structure, cost, circulation, and many other factors. Digital tools help us compare different options and find solutions that perform better. This is important progress because buildings should be safe, efficient, comfortable, and responsible toward the environment.
 
