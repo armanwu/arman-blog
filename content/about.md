@@ -16,6 +16,6 @@ I am actively engaging with academic teaching and research partnerships, bringin
 
 I welcome conversations and collaborations around architectural design, generative systems, spatial AI, BIM workflows, design cognition/HCI, and tech pedagogy.
 
-* **Email:** [arman.wu@gmail.com](mailto:arman.wu@gmail.com)
+* **Email:** [arman@armanwu.com](mailto:arman@armanwu.com)
 * **Professional:** [LinkedIn Profile](https://www.linkedin.com/in/arman-arisman-42042b4b)
 * **Code:** [GitHub Repositories](https://github.com/armanwu)
