@@ -33,7 +33,7 @@ Arisman, A. (2019). *Penerapan Metode Konvensional dan Digital dalam Proses Pera
 
 ## Other Writings
 
-I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), [Medium](https://armanwu.medium.com/), and [Kompasiana](https://www.kompasiana.com/armanwu).
+I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), [Medium](https://armanwu.medium.com/), [WordPress](https://armanwu.home.blog/), and [Kompasiana](https://www.kompasiana.com/armanwu).
 
 ## Talks
 
