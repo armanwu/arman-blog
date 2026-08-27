@@ -53,6 +53,7 @@ html {
         opacity: 0;
         transform: translateY(12px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1020,4 +1021,199 @@ pre:hover .copy-code-btn {
     }
 }
 
+/* =========================================
+   14. CODE PAGE & PINNED REPOSITORIES
+   ========================================= */
+.code-intro {
+    font-size: 1.08rem;
+    color: var(--color-navy-muted);
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
 
+.pinned-section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.pinned-badge {
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-navy-muted);
+}
+
+.repo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 18px 20px;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.repo-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+    box-shadow: 0 6px 18px rgba(18, 33, 58, 0.08);
+}
+
+.repo-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.repo-title-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.repo-icon {
+    color: var(--color-navy-muted);
+    flex-shrink: 0;
+}
+
+.repo-name {
+    font-family: var(--font-heading);
+    font-size: 0.96rem;
+    font-weight: 600;
+    color: var(--color-navy);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.repo-name:hover {
+    color: var(--color-accent);
+}
+
+.repo-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-navy-muted);
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    border-radius: 12px;
+    padding: 2px 8px;
+    flex-shrink: 0;
+}
+
+.repo-desc {
+    font-size: 0.86rem;
+    color: var(--color-navy-muted);
+    line-height: 1.5;
+    margin: 12px 0 16px 0;
+    flex-grow: 1;
+}
+
+.repo-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.8rem;
+    color: var(--color-navy-muted);
+    padding-top: 12px;
+    border-top: 1px solid var(--color-border-soft);
+}
+
+.repo-meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.repo-lang-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.repo-meta-icon {
+    color: var(--color-navy-muted);
+    flex-shrink: 0;
+}
+
+.repo-cta-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 28px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.repo-cta-box h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.1rem;
+    font-family: var(--font-heading);
+    color: var(--color-navy);
+}
+
+.repo-cta-box p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--color-navy-muted);
+}
+
+.repo-cta-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: var(--color-navy);
+    color: #ffffff;
+    border-radius: 6px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.repo-cta-btn:hover {
+    background: var(--color-accent);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 650px) {
+    .repo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .repo-cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .repo-cta-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

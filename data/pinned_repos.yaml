@@ -1,0 +1,47 @@
+- name: revit-to-sketchup-bridge
+  url: https://github.com/armanwu/revit-to-sketchup-bridge
+  description: "An open-source tool to export Revit 3D geometry, materials, and hierarchy to SketchUp via JSON."
+  language: Ruby
+  lang_color: "#701516"
+  stars: 1
+  forks: 2
+
+- name: dynamobim-toolkit
+  url: https://github.com/armanwu/dynamobim-toolkit
+  description: "Dynamo scripts to automate repetitive Revit BIM tasks."
+  language: Dynamo
+  lang_color: "#2D9CDB"
+  stars: 1
+  forks: 0
+
+- name: revit-model-doctor
+  url: https://github.com/armanwu/revit-model-doctor
+  description: "A lightweight Revit API add-in to audit BIM model health, detect unlinked CAD imports, and monitor warnings."
+  language: "C#"
+  lang_color: "#68217A"
+  stars: 0
+  forks: 0
+
+- name: revit-2027-mcp
+  url: https://github.com/armanwu/revit-2027-mcp
+  description: "Model Context Protocol (MCP) server & .NET 8 bridge for Autodesk Revit 2027 integration with AI agents."
+  language: "C#"
+  lang_color: "#68217A"
+  stars: 1
+  forks: 0
+
+- name: ifc-viewer
+  url: https://github.com/armanwu/ifc-viewer
+  description: "Lightweight Desktop IFC Viewer with Python, Three.js, and standalone Windows installer."
+  language: JavaScript
+  lang_color: "#F1E05A"
+  stars: 0
+  forks: 0
+
+- name: skp-rollback-2013
+  url: https://github.com/armanwu/skp-rollback-2013
+  description: "A lightweight tool to save SketchUp files into 2013 version in one click."
+  language: Ruby
+  lang_color: "#701516"
+  stars: 0
+  forks: 0
