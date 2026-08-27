@@ -4,11 +4,16 @@ title = 'Arman Wu'
 
 [params]
   description = "Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design."
+  images = ["/img/logo.png"]
 
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
 
 [menus]
   [[menus.main]]

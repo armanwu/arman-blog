@@ -86,7 +86,7 @@
 
     <div class="project-grid">
         {{ range first 3 $works }}
-        <a href="{{ .Permalink }}" class="project-card">
+        <a href="{{ .RelPermalink }}" class="project-card">
             <div class="project-image">
                 {{ if .Params.image }}
                 <img src="{{ .Params.image }}" alt="{{ .Title }}" loading="lazy" decoding="async">
@@ -126,7 +126,7 @@
         {{ $cat := index $.Site.Data.categories . }}
         <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
         {{ end }}
-        <a href="{{ .Permalink }}">
+        <a href="{{ .RelPermalink }}">
             <h3 class="post-title">{{ .Title }}</h3>
         </a>
         <p class="post-summary">{{ .Summary | truncate 160 }}</p>
