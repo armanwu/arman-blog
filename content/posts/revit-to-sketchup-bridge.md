@@ -41,3 +41,5 @@ So, I made it open source. I shared it for free on GitHub.
 I don't know if it will be widely adopted. I don't know if the BIM data in SketchUp will prove valuable or just be ignored. But I've put it out there, and now I wait for feedback. I'm genuinely happy if someone finds it useful. Even if the feedback is critical, it will help me improve.
 
 Ultimately, this tool is a bridge. Bridges are meant to be crossed, tested, and strengthened over time. I'm excited to see where it leads.
+
+Get the tool: https://github.com/armanwu/revit-to-sketchup-bridge
