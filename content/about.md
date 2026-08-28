@@ -4,7 +4,7 @@ draft = false
 layout = 'single-no-meta'
 description = "Arman Arisman is an architect, design technologist, and researcher based in Indonesia, working at the intersection of architecture, computation, and design cognition."
 +++
-I am Arman Arisman (also known as Arman Wu), an architect, researcher, and design technologist based in Indonesia. For over 15 years in building and planning consulting—most notably at Penta Architecture—I have led and integrated architectural computing (AI, BIM, and computational workflows) into real-world project delivery.
+I am Arman Arisman (also known as Arman Wu), an architect, researcher, and design technologist based in Indonesia. For over 15 years in building and planning consulting—most notably at [Penta Architecture](https://architecture.penta.co.id/)—I have led and integrated architectural computing (AI, BIM, and computational workflows) into real-world project delivery.
 
 I hold a doctorate from Institut Teknologi Bandung (ITB), where my research focused on Generative Design using Genetic Algorithms, examining the intersection of Human-Computer Interaction (HCI) and Design Cognition & Creativity. Rather than treating algorithms as black-box optimizers, my work investigates how computational systems and emerging AI can genuinely collaborate with human designers without compromising design intent or critical intuition.
 
