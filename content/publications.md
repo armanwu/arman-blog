@@ -51,7 +51,7 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 - <span class="category-pill tag-teal">Architecture & BIM</span> Autodesk: Transformasi Jakarta Menuju Smart City Melalui Pemanfaatan Building Information Modeling — December 4, 2025
 - <span class="category-pill tag-sky">Computation & Generative AI</span> D5 Render: Efficient Visualization Workflow with D5 Render — October 1, 2025
 - <span class="category-pill tag-sky">Computation & Generative AI</span> ISBI: Keterbatasan dan Potensi AI dalam Dunia Seni dan Desain — September 24, 2025
-- <span class="category-pill tag-aqua">Design Cognition</span> ATRIA ITB: Code & Concept: Designing for Uncertainty on Unstable Ground — September 14, 2025
+- <span class="category-pill tag-aqua">Design Cognition</span> ATRIA ITB: Code & Concept: Designing for Uncertainty on Unstable Ground — September 14, 2025 · [Media Coverage](https://itb.ac.id/berita/rumah-ruang-dan-rasa-refleksi-arsitektur-dalam-talkshow-unstable-ground-atria-2025/62919)
 - <span class="category-pill tag-teal">Architecture & BIM</span> Kementerian PU: Strategi Implementasi BIM di Tahap Perencanaan: Pendekatan Realistis dari Kondisi Lapangan ke Usulan Perbaikan Regulasi — August 11, 2025
 - <span class="category-pill tag-teal">Architecture & BIM</span> Weekend BIM Talk: Assembling the Planning and Design Puzzle: BIM, CAD, and Collaborative Intelligence — May 9, 2025
 
@@ -61,15 +61,15 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 - <span class="category-pill tag-blue">Culture & Technology</span> Pengenalan Program Studi Sarjana di SAPPK serta Gambaran tentang Profesi dari Alumni — October 12, 2024
 - <span class="category-pill tag-teal">Architecture & BIM</span> Kobimko: Assembling the Planning and Design Puzzle: BIM, CAD, and Collaborative Intelligence — September 14, 2024
 - <span class="category-pill tag-teal">Architecture & BIM</span> Potensi BIM di Indonesia dari Perspektif Konsultan Perencana Berdasarkan Pengalaman Pembangunan IKN — June 15, 2024
-- <span class="category-pill tag-sky">Computation & Generative AI</span> Imajinasi dan Teknologi: Ideasi Digital dalam Eksplorasi Bentuk Arsitektural — May 18, 2024
+- <span class="category-pill tag-sky">Computation & Generative AI</span> Imajinasi dan Teknologi: Ideasi Digital dalam Eksplorasi Bentuk Arsitektural — May 18, 2024 · [Media Coverage](https://fst.ar-raniry.ac.id/2024/05/prodi-arsitektur-uin-ar-raniry-sukses-gelar-webinar-imajinasi-dan-teknologi/)
 - <span class="category-pill tag-teal">Architecture & BIM</span> Implementasi BIM di Tahap Perencanaan ITB Innovation Park Bandung Teknopolis — March 20, 2024
 
 ### 2023
 
 - <span class="category-pill tag-teal">Architecture & BIM</span> BIM Lunch Talk: BIM Implementation with Autodesk Solution — October 4, 2023
-- <span class="category-pill tag-teal">Architecture & BIM</span> Klinik BIM: Implementasi BIM dalam Perencanaan Konstruksi — September 22, 2023
+- <span class="category-pill tag-teal">Architecture & BIM</span> Klinik BIM: Implementasi BIM dalam Perencanaan Konstruksi — September 22, 2023 · [Watch Recording](https://www.youtube.com/live/l71EJUMFs00)
 - <span class="category-pill tag-blue">Culture & Technology</span> Gereja dan VR: Apa yang Harus Kita Ketahui — July 9, 2023
-- <span class="category-pill tag-teal">Architecture & BIM</span> Weekend BIM Talk: Sertifikasi dan Jabatan Kerja BIM: Perspektif dari Konsultan Perencana Proyek Pemerintah — April 8, 2023
+- <span class="category-pill tag-teal">Architecture & BIM</span> Weekend BIM Talk: Sertifikasi dan Jabatan Kerja BIM: Perspektif dari Konsultan Perencana Proyek Pemerintah — April 8, 2023 · [Watch Recording](https://www.youtube.com/live/aLjr8unWnzQ)
 - <span class="category-pill tag-teal">Architecture & BIM</span> ArchID: BIM Challenge: Challenges of BIM Adoption in Government Projects — March 19, 2023
 - <span class="category-pill tag-sky">Computation & Generative AI</span> Akankah AI Menggantikan Manusia — March 15, 2023
 
