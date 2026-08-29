@@ -1,7 +1,7 @@
 ---
-title: "Navigasi Ruang Laten"
+title: "Navigasi Ruang Laten: Membedah Epistemologi AI Sebelum Mengkritisi Hasil Generatif"
 date: 2026-08-29T08:04:46+07:00
-description: ""
+description: "Memahami epistemologi dan teknik pelatihan AI sebelum menghakimi anomali bentukan generatif dalam arsitektur."
 category: "Computation & Generative AI"
 language: "id"
 draft: false
