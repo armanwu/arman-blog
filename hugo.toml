@@ -1,6 +1,6 @@
 baseURL = 'https://armanwu.com/'
 languageCode = 'en-us'
-title = 'Arman Wu'
+title = 'Dr. Arman Arisman'
 
 [params]
   description = "Dr. Arman Arisman — architect, design technologist, and researcher exploring how computation and AI shape architectural thinking, from BIM to generative design."
