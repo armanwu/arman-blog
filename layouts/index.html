@@ -118,8 +118,15 @@
         <div class="section-divider-line"></div>
     </div>
 
-    {{ $posts := where .Site.RegularPages "Section" "posts" }}
-    {{ range first 3 $posts }}
+    {{ $allPosts := where .Site.RegularPages "Section" "posts" }}
+    {{ $enPosts := slice }}
+    {{ range $allPosts }}
+        {{ $lang := .Params.language | default .Params.lang | default "en" }}
+        {{ if ne $lang "id" }}
+            {{ $enPosts = $enPosts | append . }}
+        {{ end }}
+    {{ end }}
+    {{ range first 3 $enPosts }}
     {{ $lang := .Params.language | default .Params.lang | default "en" }}
     <div class="post-preview">
         <div class="post-meta-tags">

@@ -6,15 +6,16 @@
 
 <!-- Filter Toolbar -->
 <div class="post-filter-toolbar" id="post-filter-toolbar">
-    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
-    <button class="filter-btn" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
+    <button class="filter-btn active" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
     <button class="filter-btn" data-filter="id">Bahasa Indonesia <span class="filter-count" id="count-id">0</span></button>
+    <button class="filter-btn" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
 </div>
 
 <div class="post-feed" id="post-feed">
     {{ range .Pages }}
     {{ $lang := .Params.language | default .Params.lang | default "en" }}
-    <article class="post-preview" data-lang="{{ $lang }}">
+    {{ $isHidden := eq $lang "id" }}
+    <article class="post-preview{{ if $isHidden }} is-hidden{{ end }}" data-lang="{{ $lang }}">
         <div class="post-meta-tags">
             <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</span>
             {{ if eq $lang "id" }}
@@ -94,7 +95,7 @@
         filterBtns.forEach(btn => {
             btn.addEventListener("click", () => {
                 const filter = btn.getAttribute("data-filter");
-                if (filter === "all") {
+                if (filter === "en") {
                     history.replaceState(null, "", window.location.pathname);
                 } else {
                     window.location.hash = filter;
@@ -103,15 +104,13 @@
             });
         });
 
-        // Cek URL Hash (#id / #en) atau URL Parameter (?lang=id)
+        // Cek URL Hash (#id / #en / #all) atau URL Parameter (?lang=...)
         const hash = window.location.hash.replace("#", "").toLowerCase();
         const urlParams = new URLSearchParams(window.location.search);
         const langParam = urlParams.get("lang");
-        const initialFilter = ["id", "en"].includes(hash) ? hash : (["id", "en"].includes(langParam) ? langParam : "all");
+        const initialFilter = ["id", "en", "all"].includes(hash) ? hash : (["id", "en", "all"].includes(langParam) ? langParam : "en");
 
-        if (initialFilter !== "all") {
-            applyFilter(initialFilter);
-        }
+        applyFilter(initialFilter);
     });
 </script>
 {{ end }}
