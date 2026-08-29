@@ -120,12 +120,24 @@
 
     {{ $posts := where .Site.RegularPages "Section" "posts" }}
     {{ range first 3 $posts }}
+    {{ $lang := .Params.language | default .Params.lang | default "en" }}
     <div class="post-preview">
-        <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</div>
-        {{ with .Params.category }}
-        {{ $cat := index $.Site.Data.categories . }}
-        <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
-        {{ end }}
+        <div class="post-meta-tags">
+            <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</span>
+            {{ if eq $lang "id" }}
+            <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
+            {{ else }}
+            <span class="lang-badge lang-en" title="English">EN</span>
+            {{ end }}
+            {{ with .Params.category }}
+            {{ $cat := index $.Site.Data.categories . }}
+            {{ if $cat }}
+            <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+            {{ else }}
+            <span class="category-pill tag-teal">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
         <a href="{{ .RelPermalink }}">
             <h3 class="post-title">{{ .Title }}</h3>
         </a>

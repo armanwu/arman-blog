@@ -3,17 +3,115 @@
     <h1>Essays</h1>
     <p>Essays and notes on architecture, computation, and design cognition.</p>
 </section>
-<div class="post-feed">
+
+<!-- Filter Toolbar -->
+<div class="post-filter-toolbar" id="post-filter-toolbar">
+    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all">0</span></button>
+    <button class="filter-btn" data-filter="en">English <span class="filter-count" id="count-en">0</span></button>
+    <button class="filter-btn" data-filter="id">Bahasa Indonesia <span class="filter-count" id="count-id">0</span></button>
+</div>
+
+<div class="post-feed" id="post-feed">
     {{ range .Pages }}
-    <article class="post-preview">
-        <div class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</div>
-        {{ with .Params.category }}
-        {{ $cat := index $.Site.Data.categories . }}
-        <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
-        {{ end }}
+    {{ $lang := .Params.language | default .Params.lang | default "en" }}
+    <article class="post-preview" data-lang="{{ $lang }}">
+        <div class="post-meta-tags">
+            <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</span>
+            {{ if eq $lang "id" }}
+            <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
+            {{ else }}
+            <span class="lang-badge lang-en" title="English">EN</span>
+            {{ end }}
+            {{ with .Params.category }}
+            {{ $cat := index $.Site.Data.categories . }}
+            {{ if $cat }}
+            <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+            {{ else }}
+            <span class="category-pill tag-teal">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
         <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p class="post-summary">{{ .Summary | truncate 160 }}</p>
     </article>
     {{ end }}
 </div>
+
+<div id="no-posts-msg" style="display:none; padding: 40px 0; color: var(--color-navy-muted); text-align: center;">
+    Tidak ada artikel dalam pilihan bahasa ini.
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const posts = document.querySelectorAll(".post-feed .post-preview");
+        const noPostsMsg = document.getElementById("no-posts-msg");
+
+        // Hitung jumlah artikel per bahasa
+        let countAll = posts.length;
+        let countId = 0;
+        let countEn = 0;
+
+        posts.forEach(post => {
+            const lang = post.getAttribute("data-lang");
+            if (lang === "id") countId++;
+            else countEn++;
+        });
+
+        const countAllEl = document.getElementById("count-all");
+        const countIdEl = document.getElementById("count-id");
+        const countEnEl = document.getElementById("count-en");
+
+        if (countAllEl) countAllEl.textContent = countAll;
+        if (countIdEl) countIdEl.textContent = countId;
+        if (countEnEl) countEnEl.textContent = countEn;
+
+        function applyFilter(filter) {
+            let visibleCount = 0;
+            posts.forEach(post => {
+                const lang = post.getAttribute("data-lang");
+                if (filter === "all" || lang === filter) {
+                    post.classList.remove("is-hidden");
+                    visibleCount++;
+                } else {
+                    post.classList.add("is-hidden");
+                }
+            });
+
+            filterBtns.forEach(btn => {
+                if (btn.getAttribute("data-filter") === filter) {
+                    btn.classList.add("active");
+                } else {
+                    btn.classList.remove("active");
+                }
+            });
+
+            if (noPostsMsg) {
+                noPostsMsg.style.display = visibleCount === 0 ? "block" : "none";
+            }
+        }
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const filter = btn.getAttribute("data-filter");
+                if (filter === "all") {
+                    history.replaceState(null, "", window.location.pathname);
+                } else {
+                    window.location.hash = filter;
+                }
+                applyFilter(filter);
+            });
+        });
+
+        // Cek URL Hash (#id / #en) atau URL Parameter (?lang=id)
+        const hash = window.location.hash.replace("#", "").toLowerCase();
+        const urlParams = new URLSearchParams(window.location.search);
+        const langParam = urlParams.get("lang");
+        const initialFilter = ["id", "en"].includes(hash) ? hash : (["id", "en"].includes(langParam) ? langParam : "all");
+
+        if (initialFilter !== "all") {
+            applyFilter(initialFilter);
+        }
+    });
+</script>
 {{ end }}

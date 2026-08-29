@@ -1,11 +1,23 @@
 {{ define "main" }}
+{{ $lang := .Params.language | default .Params.lang | default "en" }}
 <article class="full-article">
 
     <header class="article-header">
-        {{ with .Params.category }}
-        {{ $cat := index $.Site.Data.categories . }}
-        <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
-        {{ end }}
+        <div class="post-meta-tags" style="margin-bottom: 14px;">
+            {{ if eq $lang "id" }}
+            <span class="lang-badge lang-id" title="Bahasa Indonesia">Bahasa Indonesia</span>
+            {{ else }}
+            <span class="lang-badge lang-en" title="English">English</span>
+            {{ end }}
+            {{ with .Params.category }}
+            {{ $cat := index $.Site.Data.categories . }}
+            {{ if $cat }}
+            <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+            {{ else }}
+            <span class="category-pill tag-teal">{{ . }}</span>
+            {{ end }}
+            {{ end }}
+        </div>
         <h1>{{ .Title }}</h1>
         <div class="article-meta-row">
             <span class="article-author">Arman Wu</span>

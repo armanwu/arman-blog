@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Params.language | default .Params.lang | default "en" }}">
 
 <head>
     <meta charset="UTF-8">
@@ -8,14 +8,13 @@
 
     <meta name="description"
         content="{{ if .Description }}{{ .Description }}{{ else if .IsHome }}{{ .Site.Params.description }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
-    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="canonical" href="{{ .Params.canonical_url | default .Permalink }}">
 
     {{ with .OutputFormats.Get "rss" }}
     <link rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" href="{{ .Permalink }}">
     {{ end }}
 
-    {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+    {{ partial "seo.html" . }}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
