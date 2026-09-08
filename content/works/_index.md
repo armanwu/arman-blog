@@ -3,4 +3,4 @@ title = "Works"
 layout = "list"
 +++
 
-A growing collection of architectural experiments and computational design studies.
+A collection of architectural forms and spatial explorations computed through code, algorithms, and node-based logic—spanning pure scripting to parametric networks.

@@ -14,6 +14,10 @@ title = 'Dr. Arman Arisman'
     startLevel = 2
     endLevel = 3
     ordered = false
+  [markup.highlight]
+    style = "github"
+    lineNos = false
+    guessSyntax = true
 
 [menus]
   [[menus.main]]
