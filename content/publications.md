@@ -41,6 +41,7 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 
 ### 2026
 
+- <span class="category-pill tag-teal">Architecture & BIM</span> COBIMPACS: Human-Centric BIM: Nilai BIM pada Tahap Desain dari Perspektif Perencana — April 25, 2026
 - <span class="category-pill tag-blue">Culture & Technology</span> AAPDC: Manajemen Tim Digital & Kolaborasi Virtual — June 2, 2026
 - <span class="category-pill tag-teal">Architecture & BIM</span> CCMA: Rahasia Penyusunan Rencana yang Efektif untuk Proyek Berbasis BIM — April 25, 2026
 - <span class="category-pill tag-sky">Computation & Generative AI</span> ArchID: Geometri Massa Hunian Vertikal yang Merespons Kota — April 13, 2026
