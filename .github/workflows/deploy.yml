@@ -1,0 +1,33 @@
+name: Deploy to armanwu.github.io
+
+on:
+  push:
+    branches:
+      - main # change to master if your default branch is master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
+      - name: Build Hugo Site
+        run: hugo --minify
+
+      - name: Deploy to armanwu.github.io
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          external_repository: armanwu/armanwu.github.io
+          publish_branch: main
+          publish_dir: ./public
