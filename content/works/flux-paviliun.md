@@ -3,6 +3,7 @@ title : "Flux Pavilion"
 date : 2026-01-20
 draft : false
 description : "A parametric public shelter generated from sine and cosine wave modulations in Julia, translating mathematical rhythm into constructible shell geometry."
+tools : "Julia · Parametric"
 image : "/img/projects/flux-pavilion/flux-pavilion-1.webp"
 layout : "single-no-meta"
 ---

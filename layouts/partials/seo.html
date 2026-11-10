@@ -76,3 +76,49 @@
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image" content="{{ $imageURL }}">
+
+<!-- JSON-LD Structured Data -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Arman Arisman",
+  "alternateName": "Arman Wu",
+  "url": "{{ .Site.BaseURL }}",
+  "image": "{{ "/img/avatar.webp" | absURL }}",
+  "jobTitle": "Architect, Design Technologist, and Researcher",
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Institut Teknologi Bandung"
+  },
+  "sameAs": [
+    "https://scholar.google.com/citations?user=kPidohUAAAAJ&hl=en",
+    "https://www.researchgate.net/profile/Arman-Arisman",
+    "https://github.com/armanwu",
+    "https://www.linkedin.com/in/arman-arisman-42042b4b",
+    "https://www.youtube.com/c/armanwu"
+  ]
+}
+</script>
+{{ else if eq .Section "posts" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ $description | jsonify }},
+  "image": {{ $imageURL | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Arman Arisman",
+    "url": "{{ .Site.BaseURL }}about/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ end }}

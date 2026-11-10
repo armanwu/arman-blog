@@ -96,6 +96,9 @@
             </div>
             <div class="project-info">
                 <h3>{{ .Title }}</h3>
+                {{ with .Params.tools }}
+                <span class="project-tools">{{ . }}</span>
+                {{ end }}
             </div>
         </a>
         {{ end }}

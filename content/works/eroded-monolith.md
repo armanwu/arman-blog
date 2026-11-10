@@ -3,6 +3,7 @@ title : "Eroded Monolith"
 date : 2026-01-20
 draft : false
 description : "A high-rise typology study using algorithmic voxel subtraction in Julia to carve communal vertical gardens into a modernist tower."
+tools : "Julia · Computational"
 image : "/img/projects/eroded-monolith/eroded-monolith-1.webp"
 layout : "single-no-meta"
 ---

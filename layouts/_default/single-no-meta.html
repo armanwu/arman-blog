@@ -3,7 +3,12 @@
 
     <header class="article-header">
         {{ if .Section }}
-        <span class="article-tag">{{ .Section | humanize }}</span>
+        <div class="post-meta-tags" style="margin-bottom: 14px;">
+            <span class="article-tag">{{ .Section | humanize }}</span>
+            {{ with .Params.tools }}
+            <span class="category-pill tag-sky">{{ . }}</span>
+            {{ end }}
+        </div>
         {{ end }}
         <h1>{{ .Title }}</h1>
     </header>

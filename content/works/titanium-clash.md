@@ -3,6 +3,7 @@ title : "Titanium Clash"
 date : 2026-01-20
 draft : false
 description : "An experimental deconstructivist massing study using Julia to generate and curate spatial collisions of titanium and glass prisms."
+tools : "Julia · Generative"
 image : "/img/projects/titanium-clash/titanium-clash-5.webp"
 layout : "single-no-meta"
 ---
