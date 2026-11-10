@@ -41,6 +41,8 @@ I also write for [Fedora Magazine](https://fedoramagazine.org/author/armanwu/), 
 
 ### 2026
 
+- <span class="category-pill tag-teal">Architecture & BIM</span> UNIKOM: Kepastian di Ruang Rancang: Mengurai Kompleksitas Rekayasa Sebelum Terwujud — October 26, 2026
+- <span class="category-pill tag-teal">Architecture & BIM</span> NSIxInkindo: Digital in Action: What Works, What Doesn't, and What's Next — September 24, 2026
 - <span class="category-pill tag-teal">Architecture & BIM</span> COBIMPACS: Human-Centric BIM: Nilai BIM pada Tahap Desain dari Perspektif Perencana — April 25, 2026
 - <span class="category-pill tag-blue">Culture & Technology</span> AAPDC: Manajemen Tim Digital & Kolaborasi Virtual — June 2, 2026
 - <span class="category-pill tag-teal">Architecture & BIM</span> CCMA: Rahasia Penyusunan Rencana yang Efektif untuk Proyek Berbasis BIM — April 25, 2026
