@@ -1,8 +1,7 @@
 <nav class="navbar">
     <div class="nav-container">
-        <a href="/" class="nav-logo">
+        <a href="/" class="nav-logo" aria-label="{{ .Site.Title }}">
             <img src="/img/logo.webp" alt="Logo" width="32" height="32">
-            <span></span>
         </a>
 
         <button class="hamburger" id="hamburger-btn" aria-label="Menu">
@@ -12,9 +11,11 @@
         </button>
 
         <ul class="nav-menu" id="nav-menu">
+            {{ $currentRel := .RelPermalink }}
             {{ range .Site.Menus.main }}
+            {{ $isActive := or (eq $currentRel (printf "%s/" .PageRef)) (strings.HasPrefix $currentRel (printf "%s/" .PageRef)) }}
             <li class="nav-item">
-                <a href="{{ .PageRef }}" class="nav-link">{{ .Name }}</a>
+                <a href="{{ .PageRef }}" class="nav-link{{ if $isActive }} active{{ end }}"{{ if $isActive }} aria-current="page"{{ end }}>{{ .Name }}</a>
             </li>
             {{ end }}
         </ul>

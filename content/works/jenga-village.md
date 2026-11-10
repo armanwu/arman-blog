@@ -2,6 +2,7 @@
 title : "Jenga Village"
 date : 2026-01-20
 draft : false
+description : "A modular hillside housing study using rule-based voxel aggregation in Julia to generate interlocking residential units and roof terraces."
 image : "/img/projects/jenga-village/jenga-village-1.webp"
 layout : "single-no-meta"
 ---

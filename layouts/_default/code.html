@@ -17,7 +17,7 @@
 
     <div class="repo-grid">
         {{ range .Site.Data.pinned_repos }}
-        <div class="repo-card">
+        <div class="repo-card" data-repo="{{ .name }}">
             <div class="repo-card-top">
                 <div class="repo-title-row">
                     <svg class="repo-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"
@@ -41,29 +41,25 @@
                     <span>{{ .language }}</span>
                 </div>
 
-                {{ if gt .stars 0 }}
-                <div class="repo-meta-item">
+                <div class="repo-meta-item repo-stars" {{ if le .stars 0 }}style="display: none;"{{ end }}>
                     <svg class="repo-meta-icon" viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
                         aria-hidden="true">
                         <path
                             d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z">
                         </path>
                     </svg>
-                    <span>{{ .stars }}</span>
+                    <span class="repo-stars-count">{{ .stars }}</span>
                 </div>
-                {{ end }}
 
-                {{ if gt .forks 0 }}
-                <div class="repo-meta-item">
+                <div class="repo-meta-item repo-forks" {{ if le .forks 0 }}style="display: none;"{{ end }}>
                     <svg class="repo-meta-icon" viewBox="0 0 16 16" width="14" height="14" fill="currentColor"
                         aria-hidden="true">
                         <path
                             d="M5 3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878Zm3.75 7.878a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm2.75-10a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z">
                         </path>
                     </svg>
-                    <span>{{ .forks }}</span>
+                    <span class="repo-forks-count">{{ .forks }}</span>
                 </div>
-                {{ end }}
             </div>
         </div>
         {{ end }}
@@ -80,4 +76,59 @@
     </div>
 
 </article>
+
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+        const CACHE_KEY = "armanwu_gh_repos_v1";
+        const CACHE_TTL = 10 * 60 * 1000; // 10 minutes
+
+        let repos = null;
+        try {
+            const cached = sessionStorage.getItem(CACHE_KEY);
+            if (cached) {
+                const parsed = JSON.parse(cached);
+                if (Date.now() - parsed.timestamp < CACHE_TTL) {
+                    repos = parsed.data;
+                }
+            }
+            if (!repos) {
+                const res = await fetch("https://api.github.com/users/armanwu/repos?per_page=100");
+                if (res.ok) {
+                    repos = await res.json();
+                    sessionStorage.setItem(CACHE_KEY, JSON.stringify({ timestamp: Date.now(), data: repos }));
+                }
+            }
+        } catch (_) {
+            // Fallback silently to static YAML data
+        }
+
+        if (!Array.isArray(repos)) return;
+
+        const repoMap = new Map(repos.map(r => [r.name, r]));
+        document.querySelectorAll(".repo-card[data-repo]").forEach(card => {
+            const name = card.getAttribute("data-repo");
+            const data = repoMap.get(name);
+            if (!data) return;
+
+            if (data.description) {
+                const descEl = card.querySelector(".repo-desc");
+                if (descEl) descEl.textContent = data.description;
+            }
+
+            const starsWrap = card.querySelector(".repo-stars");
+            const starsCount = card.querySelector(".repo-stars-count");
+            if (starsWrap && starsCount && typeof data.stargazers_count === "number") {
+                starsCount.textContent = data.stargazers_count;
+                starsWrap.style.display = data.stargazers_count > 0 ? "" : "none";
+            }
+
+            const forksWrap = card.querySelector(".repo-forks");
+            const forksCount = card.querySelector(".repo-forks-count");
+            if (forksWrap && forksCount && typeof data.forks_count === "number") {
+                forksCount.textContent = data.forks_count;
+                forksWrap.style.display = data.forks_count > 0 ? "" : "none";
+            }
+        });
+    });
+</script>
 {{ end }}

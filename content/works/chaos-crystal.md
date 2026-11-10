@@ -2,6 +2,7 @@
 title : "Chaos Crystal"
 date : 2026-01-20
 draft : false
+description : "An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality."
 image : "/img/projects/chaos-crystal/chaos-crystal-1.webp"
 layout : "single-no-meta"
 ---

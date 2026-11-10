@@ -191,7 +191,8 @@ p {
     display: inline-block;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: var(--color-accent);
     transform: translateY(-1px);
 }
@@ -370,7 +371,8 @@ p {
     background: var(--color-surface);
 }
 
-.article-content img {
+.article-content img,
+.article-content video {
     max-width: 100%;
     height: auto;
     margin: 30px 0;
@@ -463,6 +465,18 @@ p {
     font-weight: 600;
     color: var(--color-navy);
     text-align: left;
+}
+
+.project-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: var(--color-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-navy-muted);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
 }
 
 
@@ -589,8 +603,22 @@ p {
     box-shadow: 0 3px 8px rgba(18, 33, 58, 0.08);
 }
 
-.article-header .category-pill {
-    margin-bottom: 20px;
+.article-header .category-pill,
+.article-header .article-tag {
+    margin-bottom: 14px;
+}
+
+.article-tag {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 3px 10px;
+    color: #17997B;
+    background: #E4F5F1;
+    border: 1px solid #BFE6DA;
 }
 
 .post-preview .category-pill {
@@ -821,6 +849,14 @@ p {
     text-align: right;
 }
 
+.view-all-row--split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
 .view-all-link {
     font-size: 0.9rem;
     font-weight: 600;
@@ -829,6 +865,18 @@ p {
 
 .view-all-link:hover {
     color: var(--color-accent-hover);
+}
+
+.view-all-link--secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.86rem;
+    color: var(--color-navy-muted);
+}
+
+.view-all-link--secondary:hover {
+    color: var(--color-navy);
 }
 
 /* === ESSAY LIST DIVIDER === */

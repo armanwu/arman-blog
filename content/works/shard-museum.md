@@ -2,6 +2,7 @@
 title : "Shard Museum"
 date : 2026-01-28
 draft : false
+description : "A cultural space composed of procedural prismatic shards generated in Julia, balancing fragmented geometry with warm timber slats."
 image : "/img/projects/shard-museum/shard-museum-1.webp"
 layout : "single-no-meta"
 ---

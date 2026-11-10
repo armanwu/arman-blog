@@ -2,6 +2,7 @@
 title : "Crystalline Monolith Pavilion"
 date : 2026-09-08
 draft : false
+description : "A rule-based deconstructivist pavilion synthesized in Python using Blender's bmesh library, exploring interlocking opaque volumes and glazed voids."
 image : "/img/projects/crystalline-monolith-pavilion/crystalline-monolith-pavilion-exterior.webp"
 layout : "single-no-meta"
 ---

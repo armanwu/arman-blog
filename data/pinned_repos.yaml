@@ -3,7 +3,7 @@
   description: "An open-source tool to export Revit 3D geometry, materials, and hierarchy to SketchUp via JSON."
   language: Ruby
   lang_color: "#701516"
-  stars: 1
+  stars: 2
   forks: 2
 
 - name: dynamobim-toolkit
@@ -19,7 +19,15 @@
   description: "A lightweight Revit API add-in to audit BIM model health, detect unlinked CAD imports, and monitor warnings."
   language: "C#"
   lang_color: "#68217A"
-  stars: 0
+  stars: 1
+  forks: 0
+
+- name: skp-rollback-2013
+  url: https://github.com/armanwu/skp-rollback-2013
+  description: "A lightweight tool to save SketchUp files into 2013 version in one click."
+  language: Ruby
+  lang_color: "#701516"
+  stars: 1
   forks: 0
 
 - name: revit-2027-mcp
@@ -30,18 +38,10 @@
   stars: 1
   forks: 0
 
-- name: ifc-viewer
-  url: https://github.com/armanwu/ifc-viewer
-  description: "Lightweight Desktop IFC Viewer with Python, Three.js, and standalone Windows installer."
-  language: JavaScript
-  lang_color: "#F1E05A"
-  stars: 0
-  forks: 0
-
-- name: skp-rollback-2013
-  url: https://github.com/armanwu/skp-rollback-2013
-  description: "A lightweight tool to save SketchUp files into 2013 version in one click."
-  language: Ruby
-  lang_color: "#701516"
+- name: autocad-area-calc
+  url: https://github.com/armanwu/autocad-area-calc
+  description: "AutoLISP tool to calculate closed boundary areas and insert formatted text annotations in AutoCAD drawings."
+  language: Common Lisp
+  lang_color: "#3FB68B"
   stars: 0
   forks: 0
