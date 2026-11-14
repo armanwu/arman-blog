@@ -3,7 +3,7 @@
 
     <header class="article-header">
         {{ if .Section }}
-        <div class="post-meta-tags" style="margin-bottom: 14px;">
+        <div class="post-meta-tags">
             <span class="article-tag">{{ .Section | humanize }}</span>
             {{ with .Params.tools }}
             <span class="category-pill tag-sky">{{ . }}</span>
@@ -13,29 +13,64 @@
         <h1>{{ .Title }}</h1>
     </header>
 
+    {{ if eq .Section "works" }}
+    <div class="essay-layout">
+        <aside class="essay-sidebar">
+            <div class="essay-sidebar-inner">
+                <div class="sidebar-meta-block">
+                    <div class="sidebar-label">01 // Project Spec</div>
+                    <dl class="sidebar-dl">
+                        <dt>Title</dt>
+                        <dd>{{ .Title }}</dd>
+                        {{ with .Params.tools }}
+                        <dt>Computation</dt>
+                        <dd>{{ . }}</dd>
+                        {{ end }}
+                        {{ if not .Date.IsZero }}
+                        <dt>Year</dt>
+                        <dd>{{ .Date.Format "2006" }}</dd>
+                        {{ end }}
+                        {{ with .Params.description }}
+                        <dt>Brief</dt>
+                        <dd>{{ . }}</dd>
+                        {{ end }}
+                    </dl>
+                    <a href="/works" class="sidebar-back-link">← All Works</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="essay-main">
+            <div class="article-content">
+                {{ .Content }}
+            </div>
+
+            <nav class="prev-next">
+                {{ with .PrevInSection }}
+                <a href="{{ .RelPermalink }}" class="prev-next-card">
+                    <div class="prev-next-label">← Previous</div>
+                    <div class="prev-next-title">{{ .Title }}</div>
+                </a>
+                {{ else }}
+                <div></div>
+                {{ end }}
+
+                {{ with .NextInSection }}
+                <a href="{{ .RelPermalink }}" class="prev-next-card next">
+                    <div class="prev-next-label">Next →</div>
+                    <div class="prev-next-title">{{ .Title }}</div>
+                </a>
+                {{ else }}
+                <div></div>
+                {{ end }}
+            </nav>
+        </div>
+    </div>
+    {{ else }}
     <div class="article-content">
         {{ .Content }}
     </div>
-
-    <nav class="prev-next">
-        {{ with .PrevInSection }}
-        <a href="{{ .RelPermalink }}" class="prev-next-card">
-            <div class="prev-next-label">← Previous</div>
-            <div class="prev-next-title">{{ .Title }}</div>
-        </a>
-        {{ else }}
-        <div></div>
-        {{ end }}
-
-        {{ with .NextInSection }}
-        <a href="{{ .RelPermalink }}" class="prev-next-card next">
-            <div class="prev-next-label">Next →</div>
-            <div class="prev-next-title">{{ .Title }}</div>
-        </a>
-        {{ else }}
-        <div></div>
-        {{ end }}
-    </nav>
+    {{ end }}
 
 </article>
 {{ end }}
