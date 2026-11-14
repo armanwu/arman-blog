@@ -1672,6 +1672,19 @@ pre:hover .copy-code-btn {
     max-width: 710px;
 }
 
+.about-lead {
+    font-family: var(--font-heading);
+    font-size: 1.26rem;
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--color-navy);
+    margin-bottom: 1.4rem !important;
+}
+
+.about-row {
+    grid-template-columns: 125px 1fr;
+}
+
 @media (max-width: 820px) {
     .essay-layout {
         grid-template-columns: 1fr;
@@ -1692,15 +1705,6 @@ pre:hover .copy-code-btn {
         gap: 8px 16px;
     }
 
-    .dossier-grid,
-    .tech-matrix {
-        grid-template-columns: 1fr;
-    }
-
-    .connect-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .project-grid,
     .project-grid--catalog {
         grid-template-columns: repeat(2, 1fr);
@@ -1708,13 +1712,13 @@ pre:hover .copy-code-btn {
 }
 
 @media (max-width: 560px) {
-    .connect-grid,
     .project-grid,
     .project-grid--catalog {
         grid-template-columns: 1fr;
     }
 
-    .pub-row {
+    .pub-row,
+    .about-row {
         grid-template-columns: 1fr;
         gap: 4px;
     }
