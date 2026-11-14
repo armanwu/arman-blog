@@ -14,25 +14,32 @@
 <div class="post-feed" id="post-feed">
     {{ range .Pages }}
     {{ $lang := .Params.language | default .Params.lang | default "en" }}
-    <article class="post-preview" data-lang="{{ $lang }}">
-        <div class="post-meta-tags">
-            <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</span>
-            {{ if eq $lang "id" }}
-            <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
-            {{ else }}
-            <span class="lang-badge lang-en" title="English">EN</span>
-            {{ end }}
-            {{ with .Params.category }}
-            {{ $cat := index $.Site.Data.categories . }}
-            {{ if $cat }}
-            <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
-            {{ else }}
-            <span class="category-pill tag-teal">{{ . }}</span>
-            {{ end }}
-            {{ end }}
+    <article class="post-preview post-preview--row" data-lang="{{ $lang }}">
+        <div class="post-row-aside">
+            <span class="post-row-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            <div class="post-row-sub">
+                <span>{{ .ReadingTime }} min read</span>
+                {{ if eq $lang "id" }}
+                <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
+                {{ else }}
+                <span class="lang-badge lang-en" title="English">EN</span>
+                {{ end }}
+            </div>
         </div>
-        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        <p class="post-summary">{{ .Description | default (.Summary | plainify) | truncate 160 }}</p>
+        <div class="post-row-body">
+            <div class="post-meta-tags">
+                {{ with .Params.category }}
+                {{ $cat := index $.Site.Data.categories . }}
+                {{ if $cat }}
+                <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+                {{ else }}
+                <span class="category-pill tag-teal">{{ . }}</span>
+                {{ end }}
+                {{ end }}
+            </div>
+            <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p class="post-summary">{{ .Description | default (.Summary | plainify) | truncate 160 }}</p>
+        </div>
     </article>
     {{ end }}
 </div>

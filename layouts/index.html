@@ -133,37 +133,77 @@
             {{ $enPosts = $enPosts | append . }}
         {{ end }}
     {{ end }}
+    <div class="post-feed post-feed--home">
     {{ range first 3 $enPosts }}
     {{ $lang := .Params.language | default .Params.lang | default "en" }}
-    <div class="post-preview">
-        <div class="post-meta-tags">
-            <span class="post-meta">{{ .Date.Format "Jan 2, 2006" }} • {{ .ReadingTime }} min read</span>
-            {{ if eq $lang "id" }}
-            <span class="lang-badge lang-id" title="Bahasa Indonesia">ID</span>
-            {{ else }}
-            <span class="lang-badge lang-en" title="English">EN</span>
-            {{ end }}
-            {{ with .Params.category }}
-            {{ $cat := index $.Site.Data.categories . }}
-            {{ if $cat }}
-            <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
-            {{ else }}
-            <span class="category-pill tag-teal">{{ . }}</span>
-            {{ end }}
-            {{ end }}
+    <article class="post-preview post-preview--row">
+        <div class="post-row-aside">
+            <span class="post-row-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+            <span class="post-row-read">{{ .ReadingTime }} min read · {{ if eq $lang "id" }}ID{{ else }}EN{{ end }}</span>
         </div>
-        <a href="{{ .RelPermalink }}">
-            <h3 class="post-title">{{ .Title }}</h3>
-        </a>
-        <p class="post-summary">{{ .Description | default (.Summary | plainify) | truncate 160 }}</p>
-    </div>
+        <div class="post-row-body">
+            <div class="post-meta-tags">
+                {{ with .Params.category }}
+                {{ $cat := index $.Site.Data.categories . }}
+                {{ if $cat }}
+                <span class="category-pill tag-{{ $cat.color }}">{{ . }}</span>
+                {{ else }}
+                <span class="category-pill tag-teal">{{ . }}</span>
+                {{ end }}
+                {{ end }}
+            </div>
+            <a href="{{ .RelPermalink }}">
+                <h3 class="post-title">{{ .Title }}</h3>
+            </a>
+            <p class="post-summary">{{ .Description | default (.Summary | plainify) | truncate 160 }}</p>
+        </div>
+    </article>
     {{ end }}
+    </div>
 
     <div class="view-all-row view-all-row--split">
         <a href="/posts#id" class="view-all-link view-all-link--secondary">
             <span class="lang-badge lang-id">ID</span> Baca Esai Bahasa Indonesia →
         </a>
         <a href="/posts" class="view-all-link">View All Essays →</a>
+    </div>
+
+</section>
+
+<section class="publications-home-section">
+
+    <div class="section-divider">
+        <div class="section-divider-line"></div>
+        <div class="section-divider-label">Selected Publications</div>
+        <div class="section-divider-line"></div>
+    </div>
+
+    <div class="pub-list">
+        <div class="pub-row">
+            <div class="pub-year">2026</div>
+            <div class="pub-body">
+                <div class="pub-title"><em>Desain dan Kepastian Terlalu Dini: Arsitektur, BIM, dan Bahasa "Konstruksi"</em></div>
+                <div class="pub-meta">Book · ITB Press · <a href="https://www.itbpress.id/desain-dan-kepastian-terlalu-dini-arsitektur-bim-dan-bahasa-konstruksi/">ITB Press Link ↗</a></div>
+            </div>
+        </div>
+        <div class="pub-row">
+            <div class="pub-year">2025</div>
+            <div class="pub-body">
+                <div class="pub-title">Creativity in generative design: The impact of architects' control over geometric parameters in early-stage form-finding using genetic algorithms</div>
+                <div class="pub-meta">Journal Article · <em>International Journal of Architectural Computing (IJAC)</em> · <a href="https://doi.org/10.1177/14780771251340203">DOI ↗</a></div>
+            </div>
+        </div>
+        <div class="pub-row">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+                <div class="pub-title">Architect's responses to practicing generative design for form-finding in the schematic design stage</div>
+                <div class="pub-meta">Conference Paper · <em>Proceedings of CAADRIA 2024</em> (Singapore University of Technology and Design) · <a href="https://caadria2024.org/wp-content/uploads/2024/04/21-ARCHITECT_S-RESPONSES-TO-PRACTICING-GENERATIVE-DESIGN-FOR-FORM-FINDING-IN-THE-SCHEMATIC-DESIGN-STAGE.pdf">PDF ↗</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-all-row">
+        <a href="/publications" class="view-all-link">View All Publications &amp; Talks →</a>
     </div>
 
 </section>
