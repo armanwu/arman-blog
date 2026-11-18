@@ -27,7 +27,10 @@ The form-finding workflow is written entirely in **Julia** (`GeometryBasics` and
 * **Cartesian Transformation & Ground-Datum Clamping (`Z = 0`):** Once projected into Cartesian space `(x, y, z)`, the entire geometry is shifted upward by `+10.0` units and clamped against the ground plane using `z = max(r cos θ + 10, 0)`. This single mathematical constraint flattens the lower hemisphere into a stable, load-bearing architectural footprint.
 * **Manifold Seam Closure & Grid-Based Triangulation:** To ensure a closed solid without naked edges, the azimuthal seam (`φ = 2π → 0`) and polar apexes are stitched before each quadrilateral cell `(p1, p2, p3, p4)` is subdivided into two outward-facing `GLTriangleFace` elements.
 
-## Core Julia Implementation
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-julia-mesh.webp" >}}
+
+<details class="code-drawer">
+<summary>View Julia Source Code (chaos_crystal.jl)</summary>
 
 ```julia
 using GLMakie
@@ -152,7 +155,7 @@ wireframe!(
 display(fig)
 ```
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-julia-mesh.webp" >}}
+</details>
 
 ## Planar Triangulation & Tectonic Rationalization
 

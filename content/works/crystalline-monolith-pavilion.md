@@ -29,7 +29,8 @@ The entire form is synthesized via a standalone Python script using Blender's bm
 
 {{< figure src="/img/projects/crystalline-monolith-pavilion/crystalline-monolith-pavilion-blender.webp" >}}
 
-## Core Code Implementation
+<details class="code-drawer">
+<summary>View Python Source Code (crystalline_monolith.py)</summary>
 
 ```python
 def create_polyhedral_wedge(center, scale_vec, rot_euler):
@@ -73,6 +74,8 @@ def create_polyhedral_wedge(center, scale_vec, rot_euler):
     bm.normal_update()
     return bm
 ```
+
+</details>
 
 ## Materiality & Architectural Balance
 

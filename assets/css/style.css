@@ -1860,6 +1860,44 @@ pre:hover .copy-code-btn {
     max-width: 720px;
 }
 
+/* --- Collapsible Source Code Drawer (Works Portfolio) --- */
+.code-drawer {
+    margin: 24px 0 32px 0;
+    border: 1px solid var(--color-border);
+    border-radius: 2px;
+    background: var(--color-surface);
+}
+
+.code-drawer summary {
+    padding: 12px 16px;
+    font-family: "JetBrains Mono", Consolas, monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--color-navy);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.code-drawer summary:hover {
+    background: #ECEFF2;
+    color: var(--color-accent);
+}
+
+.code-drawer summary::marker,
+.code-drawer summary::-webkit-details-marker {
+    color: var(--color-teal);
+}
+
+.code-drawer pre {
+    margin: 0 !important;
+    border: none !important;
+    border-top: 1px solid var(--color-border) !important;
+    border-radius: 0 0 2px 2px !important;
+    background: #FAFBFB !important;
+}
+
 @media (max-width: 820px) {
     .essay-layout {
         grid-template-columns: 1fr;
