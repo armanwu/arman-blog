@@ -2,34 +2,171 @@
 title : "Chaos Crystal"
 date : 2026-01-20
 draft : false
-description : "An urban-scale digital geode generated via spherical vertex perturbation in Julia, pairing chaotic geometry with oxidized copper materiality."
+description : "An urban cultural landmark synthesized via spherical radial perturbation and grid-based triangulation in Julia, translating mathematical mesh topology into folded zinc, concrete, and diagrid glass tectonics."
 tools : "Julia · Computational"
-image : "/img/projects/chaos-crystal/chaos-crystal-1.webp"
+image : "/img/projects/chaos-crystal/chaos-crystal-exterior.webp"
 layout : "single-no-meta"
 ---
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-1.webp" >}}
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-exterior.webp" >}}
 
-**Chaos Crystal** stands as a digital geode brought to the urban scale. While traditional architecture often seeks symmetry and smooth lines, this project embraces the beauty of the jagged and the irregular. It mimics the way raw minerals form in nature—sharp, unpredictable, yet possessing an inherent geometric logic.
+## Concept & Urban Tectonics
 
-## The Logic: Controlled Randomness
+**Chaos Crystal** investigates how a purely mathematical coordinate transformation can be disciplined into a buildable civic landmark. Rather than sculpting deconstructivist forms by hand, the project begins with an analytical sphere and subjects it to controlled radial perturbation—producing an expressive crystalline silhouette that anchors a stepped urban plaza.
 
-The form was generated using a custom script in **Julia**. The core concept was "spherical perturbation."
+To ground its aggressive geometry within the city fabric, the building is organized as a tectonic dialogue between three primary systems: a heavy, board-formed concrete base that absorbs pedestrian circulation from the plaza; an interlocking opaque shell of matte charcoal titanium-zinc panels; and triangular structural glass apertures that slice across the folds to reveal the warm, multi-level public atrium within.
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-3.webp" >}}
+## The Computational Pipeline
 
-Imagine a perfect sphere. The code takes every vertex of that sphere and pushes or pulls it by a random amount. As seen in the wireframe process above, this transforms a smooth ball into a chaotic, spiked mesh. The challenge was finding the "sweet spot" in the code—too much randomness creates a mess, too little looks like a boring polygon.
+The form-finding workflow is written entirely in **Julia** (`GeometryBasics` and `GLMakie`), translating spherical trigonometry into a watertight, triangulated surface mesh through four sequential operations:
 
-## Materiality: Industrial Warmth
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-process-diagram.webp" >}}
 
-Once the geometry was frozen, the visualization process in **Nano Banana** focused on grounding this alien form in reality.
+* **Discrete Spherical Parametrization ($12 \times 12$ Grid):** Instead of a high-density mesh that would yield noisy surface ripples, the script locks the polar ($\theta \in [0, \pi]$) and azimuthal ($\phi \in [0, 2\pi]$) domains to a deliberate `12 × 12` resolution with a base radius of $r_0 = 12.0$. At this coarse resolution, every grid cell naturally assumes the scale of a primary architectural facade module.
+* **Asymmetric Radial Perturbation ($\Delta r \in [-5.0, +15.0]$):** Each vertex radius is displaced stochastically via $r = r_0 + \Delta r$, spanning an actual radial envelope of `7.0` to `27.0` units. Inward compressions (`-5.0`) carve deep re-entrant valleys, while outward extensions (`+15.0`) project dramatic cantilevered spires.
+* **Cartesian Transformation & Ground-Datum Clamping ($Z = 0$):** Once projected into Cartesian space $(x, y, z)$, the entire geometry is shifted upward by `+10.0` units and clamped against the ground plane using $z = \max(r \cos\theta + 10, 0)$. This single mathematical constraint flattens the lower hemisphere into a stable, load-bearing architectural footprint.
+* **Manifold Seam Closure & Grid-Based Triangulation:** To ensure a closed solid without naked edges, the azimuthal seam ($\phi = 2\pi \rightarrow 0$) and polar apexes are stitched before each quadrilateral cell `(p1, p2, p3, p4)` is subdivided into two outward-facing `GLTriangleFace` elements.
 
-Instead of futuristic sci-fi materials, we chose **oxidized copper** and **rusted metal** panels. This gives the building a sense of age and permanence, contrasting the high-tech generative process with low-tech, tactile materials. The heavy, opaque panels are sliced open by large crystalline glass facades, allowing light to penetrate the "rock."
+## Core Julia Implementation
 
-## Interior: The Cavern
+```julia
+using GLMakie
+using GeometryBasics
+using Random
+using Colors
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-2.webp" >}}
+# Create the 3D drawing environment
+fig = Figure(size=(800, 800))
+ax = Axis3(
+    fig[1, 1],
+    aspect=:data,
+    azimuth=(-π / 2),
+    elevation=0,
+    perspectiveness=0
+)
 
-Stepping inside feels like entering a hollowed-out gemstone. The interior structure reflects the exterior chaos, with angled ceilings and faceted walls. However, the atmosphere is surprisingly warm.
+hidedecorations!(ax)
+hidespines!(ax)
 
-By combining the industrial copper skin with warm wood flooring and indoor trees, the space acts as a cozy, sheltered cavern for public gathering. It creates a unique spatial experience where the walls themselves seem to fold and crash around the visitors, yet still offer a sense of protection.
+# Create the ground plane
+wireframe!(
+    ax,
+    Rect3f(Point3f(-30, -30, 0), Vec3f(60, 60, 0)),
+    color=(:white, 0.1),
+    linewidth=0.0
+)
+
+# Generate the Chaos Crystal geometry
+function chaos_crystal()
+
+    # Define the main parameters
+    resolution = 12
+    base_radius = 12
+
+    # Initialize mesh data
+    points = Point3f[]
+    faces = GLTriangleFace[]
+
+    # Create a grid to store 3D points
+    grid_points = Matrix{Point3f}(undef, resolution, resolution)
+
+    # Generate points using spherical coordinates
+    for i in 1:resolution
+        for j in 1:resolution
+
+            theta = π * (i - 1) / (resolution - 1)
+            phi = 2π * (j - 1) / (resolution - 1)
+
+            # Apply random radius variation
+            random_radius = base_radius + rand(-5.0:15.0)
+
+            # Convert spherical coordinates into Cartesian coordinates
+            x = random_radius * sin(theta) * cos(phi)
+            y = random_radius * sin(theta) * sin(phi)
+            z = random_radius * cos(theta)
+
+            # Raise the geometry above ground
+            final_z = max(z + 10, 0)
+
+            grid_points[i, j] = Point3f(x, y, final_z)
+        end
+    end
+
+    # Close the spherical surface
+    for i in 1:resolution
+        grid_points[i, resolution] = grid_points[i, 1]
+    end
+
+    # Connect the top and bottom poles
+    for j in 1:resolution
+        grid_points[1, j] = grid_points[1, 1]
+        grid_points[resolution, j] = grid_points[resolution, 1]
+    end
+
+    # Connect neighboring points to create triangular faces
+    for i in 1:(resolution-1)
+        for j in 1:(resolution-1)
+
+            p1 = grid_points[i, j]
+            p2 = grid_points[i, j+1]
+            p3 = grid_points[i+1, j+1]
+            p4 = grid_points[i+1, j]
+
+            push!(points, p1, p2, p3, p4)
+
+            # Divide each quadrilateral into two outward-facing triangles
+            current = length(points) - 3
+
+            push!(
+                faces,
+                GLTriangleFace(current, current + 3, current + 2),
+                GLTriangleFace(current + 2, current + 1, current)
+            )
+        end
+    end
+
+    # Return the final 3D mesh
+    return GeometryBasics.Mesh(points, faces)
+end
+
+# Generate the crystal
+crystal_mesh = chaos_crystal()
+
+# Display the solid surface
+mesh!(
+    ax,
+    crystal_mesh,
+    color=(RGB(0.50, 0.70, 0.68), 0.9),
+    shading=true
+)
+
+# Display the mesh edges
+wireframe!(
+    ax,
+    crystal_mesh,
+    color=(:black, 0.28),
+    linewidth=1.2
+)
+
+# Render the final result
+display(fig)
+```
+
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-julia-mesh.webp" >}}
+
+## Planar Triangulation & Tectonic Rationalization
+
+A recurring challenge in computational architecture is translating stochastic, freeform meshes into constructible building envelopes. Because four-point quadrilateral faces almost always warp into non-planar surfaces under random vertex perturbation, the script explicitly triangulates every cell into rigid three-point `GLTriangleFace` primitives.
+
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-maquette.webp" >}}
+
+Because three points in space always define a perfectly flat plane, the entire crystalline envelope is 100% developable from flat sheet stock. As demonstrated in the architectural study model above—fabricated from matte museum board, laser-scored triangular facets, transparent acrylic glazing, and a stepped basswood plinth—the exact topology exported from Julia translates directly into physical assembly without requiring doubly curved panels.
+
+## Interior Tectonics & Spatial Experience
+
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-interior.webp" >}}
+
+Inside the building, the geometric aggression of the exterior shell opens into a luminous, multi-level cultural atrium. Rather than concealing the structural logic behind false ceilings, the interior expresses the triangulated geometry as a primary tectonic system:
+
+* **Inclined Concrete Cores & Skybridges:** Monumental board-formed concrete piers anchor the exhibition galleries, connected across the void by slender steel pedestrian bridges that allow visitors to experience the crystal from multiple elevations.
+* **Diagrid Glazing & Folded Acoustic Soffits:** Where the faceted envelope opens to the sky, inclined steel mullion grids trace the underlying mesh topology, while the opaque upper cones are lined with warm-lit acoustic panels that diffuse daylight deep into the public concourse.
