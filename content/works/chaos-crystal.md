@@ -20,7 +20,7 @@ To ground its aggressive geometry within the city fabric, the building is organi
 
 The form-finding workflow is written entirely in **Julia** (`GeometryBasics` and `GLMakie`), translating spherical trigonometry into a watertight, triangulated surface mesh through four sequential operations:
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-process-diagram.webp" >}}
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-generative-process.webp" >}}
 
 * **Discrete Spherical Parametrization (12 × 12 Grid):** Instead of a high-density mesh that would yield noisy surface ripples, the script locks the polar (`θ ∈ [0, π]`) and azimuthal (`φ ∈ [0, 2π]`) domains to a deliberate `12 × 12` resolution with a base radius of `r₀ = 12.0`. At this coarse resolution, every grid cell naturally assumes the scale of a primary architectural facade module.
 * **Asymmetric Radial Perturbation (`Δr ∈ [-5.0, +15.0]`):** Each vertex radius is displaced stochastically via `r = r₀ + Δr`, spanning an actual radial envelope of `7.0` to `27.0` units. Inward compressions (`-5.0`) carve deep re-entrant valleys, while outward extensions (`+15.0`) project dramatic cantilevered spires.
@@ -161,6 +161,10 @@ display(fig)
 
 A recurring challenge in computational architecture is translating stochastic, freeform meshes into constructible building envelopes. Because four-point quadrilateral faces almost always warp into non-planar surfaces under random vertex perturbation, the script explicitly triangulates every cell into rigid three-point `GLTriangleFace` primitives.
 
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-elevation-drawing.webp" >}}
+
+Notice how the `GLMakie` viewport in the script is configured as a true parallel projection (`elevation = 0`, `perspectiveness = 0`, `azimuth = -π / 2`). This allows the raw mathematical output to translate directly into a scaled architectural orthographic elevation. Against the heavy `Z = 0` ground datum line (`final_z = max(z + 10, 0)`), each primary triangular facet is further rationalized into secondary tectonic components: board-formed concrete base walls at pedestrian level, standing-seam titanium-zinc cladding across the opaque shards, and subdivided curtain-wall glazing modules calibrated to human scale.
+
 {{< figure src="/img/projects/chaos-crystal/chaos-crystal-maquette.webp" >}}
 
 Because three points in space always define a perfectly flat plane, the entire crystalline envelope is 100% developable from flat sheet stock. As demonstrated in the architectural study model above—fabricated from matte museum board, laser-scored triangular facets, transparent acrylic glazing, and a stepped basswood plinth—the exact topology exported from Julia translates directly into physical assembly without requiring doubly curved panels.
@@ -174,12 +178,16 @@ Inside the building, the geometric aggression of the exterior shell opens into a
 * **Inclined Concrete Cores & Skybridges:** Monumental board-formed concrete piers anchor the exhibition galleries, connected across the void by slender steel pedestrian bridges that allow visitors to experience the crystal from multiple elevations.
 * **Diagrid Glazing & Folded Acoustic Soffits:** Where the faceted envelope opens to the sky, inclined steel mullion grids trace the underlying mesh topology, while the opaque upper cones are lined with warm-lit acoustic panels that diffuse daylight deep into the public concourse.
 
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-perimeter-promenade.webp" >}}
+
+Along the building's perimeter, the outward radial projections (`Δr > 0`) become habitable triple-height viewing pockets where cantilevered walkways and floating stairs converge directly behind the faceted glass skin. Here, the multi-nodal steel diagrid junctions—corresponding directly to the perturbed vertices of the Julia mesh—frame oblique vistas back down toward the stepped civic plaza and across the surrounding urban skyline while casting dynamic diagonal sun patterns across the polished concrete decks.
+
 {{< figure src="/img/projects/chaos-crystal/chaos-crystal-interior-mezzanine.webp" >}}
 
 From the upper mezzanine promenade, the spatial choreography between the outer shell and the inner structural frame becomes fully legible. A row of raked board-formed concrete columns supports the cantilevered gallery walkways, while a central stair and escalator spine draws visitors upward through the folded volume—framing dramatic views across the concourse against the fractured glazing.
 
 ## Diurnal Tectonic Inversion
 
-{{< figure src="/img/projects/chaos-crystal/chaos-crystal-exterior-night.webp" >}}
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-night-plaza.webp" >}}
 
 At twilight, the architectural reading of the building undergoes a deliberate inversion. Under daylight, the crystalline mass reads primarily as an opaque, sculptural monolith carved by shadow. After dusk, warm interior illumination radiates through the triangular diagrid apertures while recessed linear grazing lights trace the folded ridge seams—transforming the pavilion into a glowing civic lantern on the urban plaza.
