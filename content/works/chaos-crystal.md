@@ -173,3 +173,13 @@ Inside the building, the geometric aggression of the exterior shell opens into a
 
 * **Inclined Concrete Cores & Skybridges:** Monumental board-formed concrete piers anchor the exhibition galleries, connected across the void by slender steel pedestrian bridges that allow visitors to experience the crystal from multiple elevations.
 * **Diagrid Glazing & Folded Acoustic Soffits:** Where the faceted envelope opens to the sky, inclined steel mullion grids trace the underlying mesh topology, while the opaque upper cones are lined with warm-lit acoustic panels that diffuse daylight deep into the public concourse.
+
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-interior-mezzanine.webp" >}}
+
+From the upper mezzanine promenade, the spatial choreography between the outer shell and the inner structural frame becomes fully legible. A row of raked board-formed concrete columns supports the cantilevered gallery walkways, while a central stair and escalator spine draws visitors upward through the folded volume—framing dramatic views across the concourse against the fractured glazing.
+
+## Diurnal Tectonic Inversion
+
+{{< figure src="/img/projects/chaos-crystal/chaos-crystal-exterior-night.webp" >}}
+
+At twilight, the architectural reading of the building undergoes a deliberate inversion. Under daylight, the crystalline mass reads primarily as an opaque, sculptural monolith carved by shadow. After dusk, warm interior illumination radiates through the triangular diagrid apertures while recessed linear grazing lights trace the folded ridge seams—transforming the pavilion into a glowing civic lantern on the urban plaza.
