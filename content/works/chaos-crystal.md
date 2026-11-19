@@ -186,8 +186,8 @@ Along the building's perimeter, the outward radial projections (`Δr > 0`) becom
 
 From the upper mezzanine promenade, the spatial choreography between the outer shell and the inner structural frame becomes fully legible. A row of raked board-formed concrete columns supports the cantilevered gallery walkways, while a central stair and escalator spine draws visitors upward through the folded volume—framing dramatic views across the concourse against the fractured glazing.
 
-## Diurnal Tectonic Inversion & Phenomenology
+## Diurnal Tectonic Inversion & Architectural Reading
 
 {{< figure src="/img/projects/chaos-crystal/chaos-crystal-night-plaza.webp" >}}
 
-Beyond its mathematical origin, the building operates as a phenomenological instrument that registers the passage of time and light. Under daylight, the crystalline mass reads as an earthbound, gravitational monolith carved by deep shadow; as the sun lowers, the perturbed diagrid nodes act as sundials that project shifting geometric shadows across the interior concourse. After dusk, this reading inverts completely—warm interior illumination radiates outward through the triangular apertures while recessed linear grazing lights trace the folded ridge seams, transforming the heavy shell into a weightless civic lantern on the urban plaza.
+While the Julia script itself only computes spherical coordinates and random radial offsets (`Δr ∈ [-5, 15]`), architectural translation turns this raw mathematical mesh into a phenomenological instrument of time and light. Under daylight, the curated form reads as an earthbound, gravitational monolith carved by deep shadow; as the sun lowers, the perturbed diagrid nodes frame shifting geometric shadows across the interior concourse. After dusk, this reading inverts—warm interior illumination radiates outward through the triangular apertures while linear grazing lights trace the folded ridge seams, transforming the heavy shell into a glowing civic lantern on the urban plaza.
