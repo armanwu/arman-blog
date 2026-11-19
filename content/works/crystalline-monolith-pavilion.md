@@ -364,4 +364,4 @@ Inside the pavilion, the collision between opaque and transparent volumes create
 
 {{< figure src="/img/projects/crystalline-monolith-pavilion/crystalline-monolith-exterior-night.webp" >}}
 
-At twilight, architectural grazing uplights accentuate the sharp creases and overhanging soffits of the white monolithic wedges, while warm interior illumination radiates outward through the glazed central fissure and mirrors across the calm water plane.
+Phenomenologically, the pavilion stages a visceral encounter between gravitational mass and perceptual weightlessness. The planar bisection (`Z = 0.02`) anchors the fractured wedges to the earth, yet their cantilevers hover just above the still water plane—where reflections double the geometry and dissolve the boundary between heavy concrete solid and fluid atmosphere. At twilight, architectural grazing uplights accentuate the sharp creases and overhanging soffits, while warm interior illumination radiates outward through the glazed central fissure across the dark basin.

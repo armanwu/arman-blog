@@ -159,4 +159,4 @@ In translating the parametric rib sequence into a full-scale civic building, the
 
 {{< figure src="/img/projects/flux-vaults/flux-vaults-exterior-night.webp" >}}
 
-At dusk, warm grazing uplights illuminate the deep concrete arch intrados while interior concourse lighting radiates through the radial entrance portal and crescent clerestories—mirroring the rhythmic sequence of vaults across the still water basin.
+Phenomenologically, the stochastic modulation of the thirty arches (`hᵢ` and `Δyᵢ`) translates abstract trigonometry into a kinesthetic choreography of spatial compression and release. As visitors move along the 100-meter axis, the body registers the rhythmic rise and fall of the concrete vaults alongside the shifting crescents of sky and water. At dusk, warm grazing uplights illuminate the deep concrete arch intrados while interior concourse lighting radiates through the radial entrance portal and clerestory ribbons—mirroring the vaulted cadence across the still water basin.
