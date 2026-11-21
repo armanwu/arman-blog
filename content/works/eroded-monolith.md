@@ -14,13 +14,13 @@ layout : "single-no-meta"
 
 The concept creates a dialogue between two opposing forces: the perfection of the modernist grid versus the imperfection of organic erosion.
 
-## The Computational Pipeline: Euclidean Voxel Subtraction
+## The Computational Logic: Carving with Distance
 
-The form-finding process is driven by a custom script in **Julia** (`GLMakie`, `GeometryBasics`, and `LinearAlgebra`). Unlike additive aggregation workflows that stack units organically, this project employs a **subtractive Boolean distance-field** method on a discrete 3D voxel lattice:
+The form-finding process is driven by a script in **Julia**. Unlike additive workflows that stack blocks upward, this project uses a **subtractive** method—carving space out of a solid tower volume:
 
-* **Prismatic High-Rise Lattice (`11 × 11 × 21` Grid):** The tower envelope is initialized as a Cartesian voxel matrix spanning `x ∈ [-5, 5]`, `y ∈ [-5, 5]`, and `z ∈ [0, 20]`, establishing a rigid orthogonal structural grid within a wireframe site boundary (`Rect3f`).
-* **Spherical Distance-Field Erosion (`norm(point - cutter_center) > cutter_radius`):** A spherical cutting attractor is positioned along the corner edge at mid-height (`cutter_center = Point3f(5, 5, 10)` with `cutter_radius = 7.0`). As the algorithm iterates through each `(x, y, z)` coordinate, it computes the Euclidean distance to the attractor center and excises any voxel falling inside the `7.0`-unit radius.
-* **Real-Time Progressive Assembly (`Observable` & `@async`):** Using reactive `Observable` data streams (`voxels_live` and `colors_live`) coupled with `meshscatter!`, the script builds and visualizes the tower floor-by-floor in real time, mapping each retained voxel's Euclidean distance value to an `:ice` color gradient (`colorrange = (0, 15)`).
+* **A Solid Tower Grid (`11 × 11 × 21` Blocks):** The building starts as a regular 3D grid of cubes (`11 × 11` units wide and `21` stories tall), representing a standard orthogonal office tower.
+* **Carving with an Invisible Sphere:** An invisible spherical "cutting tool" (radius `7.0`) is placed along the corner of the tower at mid-height (`x = 5, y = 5, z = 10`). As the script checks every block in the grid, it measures the straight-line distance from that block to the center of the sphere—deleting any block that falls inside the sphere's radius.
+* **Floor-by-Floor Growth:** As the code runs, it builds the remaining blocks layer by layer from the ground up and colors each block according to its distance from the carved void, revealing a stepped spherical canyon cut deep into the corner of the monolith.
 
 {{< figure src="/img/projects/eroded-monolith/eroded-monolith-2.webp" >}}
 
